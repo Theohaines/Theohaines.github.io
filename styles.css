@@ -83,7 +83,6 @@ h2
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-weight: 600;
 }
 
 .AboutMeText
@@ -93,6 +92,24 @@ h2
 }
 
 p
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5
 {
     color: white;
     font-family: 'Montserrat', sans-serif;
