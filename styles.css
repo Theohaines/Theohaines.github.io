@@ -85,12 +85,6 @@ h2
     display: inline-block;
 }
 
-.AboutMeText
-{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
 p
 {
     color: white;
@@ -110,6 +104,12 @@ h4
 }
 
 h5
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.LatestNews
 {
     color: white;
     font-family: 'Montserrat', sans-serif;
