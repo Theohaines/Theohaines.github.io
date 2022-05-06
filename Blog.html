@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <h1>theohaines.xyz | Blog</h1>
+    <title>Blog</title>
+
+    <div class="NavBar">
+        <a href="index.html"><button class="Button Button1">home</button></a>
+        <a href="AboutMe.html"><button class="Button Button1">about me</button></a>
+        <a href="Software-Games.html"><button class="Button Button1">software/games</button></a>
+        <a href="Contact.html"><button class="Button Button1">contact</button></a>
+        <a href="Blog.html"><button class="Button Button1">Blog</button></a>
+        <form id="searchForm">
+            <div class="input-group">
+               <button id="b1" class="button Button1" type="button" 
+                    onclick="findString(getElementById('t1').value);">Go
+               </button>
+               <input type="text" id="t1" class="form-control" placeholder="Enter a date...">
+            </div>
+         </form>
+    </div>
+
+    <script>
+var TRange=null;
+
+function findString (str) {
+ if (parseInt(navigator.appVersion)<4) return;
+ var strFound;
+ if (window.find) {
+
+  // CODE FOR BROWSERS THAT SUPPORT window.find
+
+  strFound=self.find(str);
+  if (!strFound) {
+   strFound=self.find(str,0,1);
+   while (self.find(str,0,1)) continue;
+  }
+ }
+ else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+  // EXPLORER-SPECIFIC CODE
+
+  if (TRange!=null) {
+   TRange.collapse(false);
+   strFound=TRange.findText(str);
+   if (strFound) TRange.select();
+  }
+  if (TRange==null || strFound==0) {
+   TRange=self.document.body.createTextRange();
+   strFound=TRange.findText(str);
+   if (strFound) TRange.select();
+  }
+ }
+ else if (navigator.appName=="Opera") {
+  alert ("Opera browsers not supported, sorry...")
+  return;
+ }
+ if (!strFound) alert ("String '"+str+"' not found!")
+ return;
+}
+
+    </script>
+</head>
+<body>
+    <div class="BlogPost">
+        <h1>Latest Blog</h1>
+        <h2 id="Blog Title">This is my first blog post here</h2>
+        <h5 id="Date of post">6th may 2022</h5>
+        <p id="BlogParagraph">
+            This is mainly just a test of the blog system i've made but i also want to list a few things that'll be posted here such as: <br>
+            <ul>
+                <li>Devlogs</li>
+                <li>General news</li>
+                <li>Game assets</li>
+                <li>and more!</li>
+            </ul>
+            You can access the Blog page from the blog button on the website header or you can see the latest blog on the website homepage. To be honest i didn't think i'd accatually
+            end up using the domain in the end but apparently i did and were here now. I will probally also add to the website as time goes on if you have any suggestions feel free
+            to contact me using the contact page on the website. Thats all for now i think thanks for reading - Theo
+        </p>
+    </div>
+
+    <div id="Date:">
+
+    </div>
+</body>
