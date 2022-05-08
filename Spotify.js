@@ -3,7 +3,7 @@ username="theohaines";
 
 $("#Spotify a").attr("href", "http://www.last.fm/user/" + username + "/now");
 
-$.get( "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&api_key=1f633977acf0e2d0630ec11dbc350d3e&format=json", function( data ) 
+$.get( "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&api_key=1f633977acf0e2d0630ec11dbc350d3e&format=json", function( data ) 
 {
 	if (typeof data.recenttracks.track[0]["@attr"] != "undefined")
 	{
