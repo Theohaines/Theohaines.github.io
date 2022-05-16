@@ -1,0 +1,78 @@
+body
+{
+    background-color: white;
+}
+
+head
+{
+    contain: content;
+}
+
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    color: #fc5974;
+}
+
+h2
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.NavLinks
+{
+
+}
+
+.Button
+{
+    background-color: #fc5974;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    margin: 4px 2px;
+    size: 12px;
+    padding: 12px;
+}
+
+.Button:hover
+{
+    background-color: #f56f86;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    margin: 4px 2px;
+    size: 12px;
+    padding: 12px;
+}
+
+.OurMission
+{
+    border: solid rgb(59, 59, 219);
+    background-color: rgb(59, 59, 219);
+    width: 100%;
+    border-left: 100%;
+}
+
+.OurGoals
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: medium;
+}
+
+.CallToAction
+{
+    border: solid rgb(59, 59, 219);
+    background-color: rgb(59, 59, 219);
+    width: 100%;
+    border-left: 100%;
+}
+
+p
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: medium;
+}
