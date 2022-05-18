@@ -1,17 +1,51 @@
-body
-{
-    background-color: white;
-}
-
 head
 {
-    contain: content;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+    background-image: linear-gradient(to bottom right, #75a4d3, #f08080);
+}
+
+html
+{
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.NavBar
+{
+    border-radius: auto;
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+.Button
+{
+    border: none;
+    background-color: #75a4d300;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.Button:hover
+{
+    border: none;
+    background-color: hsla(210, 52%, 64%, 0.723);
+}
+
+.Button:active
+{
+    border: none;
+    background-color: hsl(210, 52%, 64%);
 }
 
 h1
 {
     font-family: 'Montserrat', sans-serif;
-    color: #fc5974;
+    color: white;
 }
 
 h2
@@ -20,59 +54,29 @@ h2
     color: white;
 }
 
-.NavLinks
-{
-
-}
-
-.Button
-{
-    background-color: #fc5974;
-    color: white;
-    border-radius: 12px;
-    border: none;
-    margin: 4px 2px;
-    size: 12px;
-    padding: 12px;
-}
-
-.Button:hover
-{
-    background-color: #f56f86;
-    color: white;
-    border-radius: 12px;
-    border: none;
-    margin: 4px 2px;
-    size: 12px;
-    padding: 12px;
-}
-
-.OurMission
-{
-    border: solid rgb(59, 59, 219);
-    background-color: rgb(59, 59, 219);
-    width: 100%;
-    border-left: 100%;
-}
-
-.OurGoals
+h3
 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: medium;
-}
-
-.CallToAction
-{
-    border: solid rgb(59, 59, 219);
-    background-color: rgb(59, 59, 219);
-    width: 100%;
-    border-left: 100%;
 }
 
 p
 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: medium;
+}
+
+.TransparentContainer
+{
+    border-radius: auto;
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
 }
