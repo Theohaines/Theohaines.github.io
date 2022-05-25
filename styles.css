@@ -66,11 +66,13 @@ h2
 }
 
 .TextLabel{
-    color: white;
+    color: #010344;
     font-family: 'Montserrat', sans-serif;
 }
 
 .TextInput{
+    background-color: #01034413;;
+    border-color: #01034413;
     color: lightslategray;
     font-family: 'Montserrat', sans-serif;
 }
