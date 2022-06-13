@@ -156,7 +156,7 @@ h5
     top: 0; /* Stay at the top */
     right: 0;
     bottom: 10;
-    background-color: rgb(0, 0, 0); /* Black */
+    background-color: rgba(0, 0, 0, 0.03); /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 }

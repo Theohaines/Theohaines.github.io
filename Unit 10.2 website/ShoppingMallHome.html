@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    
+    <div class="scroll-left">
+    <p>The mall is open 10AM - 5PM ----- The car park is open 6:30AM - 11PM ----- The mall help desk is located in libary ----- Lost children are located at the libary at the help desk ----- The jungle gym is closed today, sorry for any incovinience</p>
+    </div>
+        
+</head>
+<body> 
+    <br>
+    <br>
+    <div class="TransparentContainer" id="CallToActionOne">
+        <center>
+            <h1>Nottingham shopping center</h1>
+            <h2>The date is <span id='date'></span>.</h2>
+            <div class="Buttons">
+
+            </div>
+        </center>
+        <div class="row">
+            <div class="column">
+
+            </div>
+            <div class="column">
+                <div class="img-zoom-container">
+                    <img id="TheImage" src="Images/LowerFloor.jpg" alt="">
+                    <div id="myresult" class="img-zoom-result"></div>
+                  </div>
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function WhatFloorAmIOn()
+        {
+            document.getElementById("TheImage").src="Images/YouAreHere.png";
+        }
+        function FloorOne()
+        {
+            document.getElementById("TheImage").src="Images/LowerFloor.jpg";
+        }
+        function Facilitys()
+        {
+            document.getElementById("TheImage").src="Images/Facilitys.png";
+        }
+        function FoodLocations()
+        {
+            document.getElementById("TheImage").src="Images/FoodLocations.png";
+        }
+        function ParkingLocations()
+        {
+            document.getElementById("TheImage").src="Images/CarParks.png";
+        }
+    </script>
+
+    <div class="SideBar">
+        <div class="Socials"> 
+            <h2>Navigation</h2>
+            <button class="Button Button1" onclick="FloorOne()">Floor 1</button>
+            <button class="Button Button1" onclick="Facilitys()">Facilitys</button>
+            <button class="Button Button1" onclick="FoodLocations()">Food</button>
+            <button class="Button Button1" onclick="ParkingLocations()">Parking</button>
+            <button class="Button Button1" onclick="WhatFloorAmIOn()">Where am i?</button>
+            <h2>Helpful links</h2>
+            <a href="https://goo.gl/maps/oSpFZoYY4LL65kT78"><button class="Button Button1">Google maps</button></a>
+            <a href="https://www.galleriesbristol.co.uk/"><button class="Button Button1">Our website</button></a>
+            <a href="https://www.galleriesbristol.co.uk/parking/"><button class="Button Button1">Parking info</button></a>
+        </div>
+    </div>
+
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("date").innerHTML = day + "/" + month + "/" + year;
+    </script>
+
+    <div>
+        <center>
+            
+        </center>
+    </div>
+
+    <script>
+        function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /* Create lens: */
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /* Insert lens: */
+  img.parentElement.insertBefore(lens, img);
+  /* Calculate the ratio between result DIV and lens: */
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /* Set background properties for the result DIV */
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /* Execute a function when someone moves the cursor over the image, or the lens: */
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /* And also for touch screens: */
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    /* Calculate the position of the lens: */
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /* Prevent the lens from being positioned outside the image: */
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    /* Set the position of the lens: */
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /* Display what the lens "sees": */
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+    </script>
+
+    <script>
+        imageZoom("TheImage", "myresult");
+    </script>
+</body>
