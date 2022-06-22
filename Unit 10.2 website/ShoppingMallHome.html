@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="styles.css">
     
     <div class="scroll-left">
     <p>The mall is open 10AM - 5PM ----- The car park is open 6:30AM - 11PM ----- The mall help desk is located in libary ----- Lost children are located at the libary at the help desk ----- The jungle gym is closed today, sorry for any incovinience</p>
@@ -20,11 +20,23 @@
         </center>
         <div class="row">
             <div class="column">
-
+                <div id="InfoBar">
+                    <h2 id="InfoHeader">Offers</h2>
+                    <ul id="InfoList" class="InfoList">
+                        <li>Starbucks has a 20% off offer for the next 3 days</li>
+                        <li>Carphone Warehouse is doing 20% off sim only ID mobile contracts</li>
+                        <li>Primark 30% off clearence sale!</li>
+                    </ul>
+                    <h2 id="NewsHeader">News</h2>
+                    <ul id="NewsList" class="InfoList">
+                        <li>There will be a concert by the chats in C1-4 on the 28th</li>
+                        <li>A Currys store will be opening in Lot 12 on 14/6/22</li>
+                    </ul>
+                </div>
             </div>
             <div class="column">
                 <div class="img-zoom-container">
-                    <img id="TheImage" src="Images/LowerFloor.jpg" alt="">
+                    <img id="TheImage" src="Images/LowerFloor.png" alt="">
                     <div id="myresult" class="img-zoom-result"></div>
                   </div>
             </div>
@@ -35,40 +47,346 @@
     </div>
 
     <script>
-        function WhatFloorAmIOn()
+        var Header = document.getElementById('InfoHeader');
+        var List = document.getElementById('InfoList');
+        var InfoBar = document.getElementById('InfoBar');
+        var NewsHeader = document.getElementById("NewsHeader");
+        var NewsList = document.getElementById('NewsList')
+
+        function Home()
         {
-            document.getElementById("TheImage").src="Images/YouAreHere.png";
+            document.getElementById("TheImage").src="Images/LowerFloor.png";
+
+            Header.textContent = "Offers"
+            NewsHeader.textContent = "News"
+
+            List.innerHTML = "";
+
+            var Starbucks = document.createElement('li');
+            Starbucks.appendChild(document.createTextNode("Starbucks has a 2 for 1 deal on all drinks for the next 3 days!"));
+            List.appendChild(Starbucks);
+
+            var Carphone = document.createElement('li');
+            Carphone.appendChild(document.createTextNode("Carphone Warehouse is doing 20% off sim only ID mobile contracts"));
+            List.appendChild(Carphone);
+
+            var Primark = document.createElement('li');
+            Primark.appendChild(document.createTextNode("Primark 30% off clearence sale!"));
+            List.appendChild(Primark);
+
+            //News
+
+            var Concert = document.createElement('li');
+            Concert.appendChild(document.createTextNode("There will be a concert by the chats in C1-4 on the 28th"));
+            NewsList.appendChild(Concert);
+
+            var Currys = document.createElement('li');
+            Currys.appendChild(document.createTextNode("A Currys store will be opening in Lot 12 on 14/6/22"));
+            NewsList.appendChild(Currys);
         }
-        function FloorOne()
+        function Parking()
         {
-            document.getElementById("TheImage").src="Images/LowerFloor.jpg";
+            //document.getElementById("TheImage").src="Images/LowerFloor.png";
+
+            Header.textContent = "Parking info"
+            NewsHeader.textContent = ""
+
+            List.innerHTML = "";
+            NewsList.innerHTML = "";
+
+            var ParkingInfo1 = document.createElement('li');
+            ParkingInfo1.appendChild(document.createTextNode("The carpark is open 6:30AM to 11PM"));
+            List.appendChild(ParkingInfo1);
+
+            var ParkingInfo2 = document.createElement('li');
+            ParkingInfo2.appendChild(document.createTextNode("All day parking costs £4.80"));
+            List.appendChild(ParkingInfo2);
+        }
+        function Banks()
+        {
+            //document.getElementById("TheImage").src="Images/Facilitys.png";
+            
+            Header.textContent = "Banks"
+            NewsHeader.textContent = ""
+
+            List.innerHTML = "";
+            NewsList.innerHTML = "";
+
+            var LloydsBank = document.createElement('li');
+            LloydsBank.appendChild(document.createTextNode("Lloyds bank - 5"));
+            List.appendChild(LloydsBank);
+
+            var Halifax = document.createElement('li');
+            Halifax.appendChild(document.createTextNode("HaliFax - 6"));
+            List.appendChild(Halifax);
+        }
+        function Shopping()
+        {
+            //document.getElementById("TheImage").src="Images/FoodLocations.png";
+
+            Header.textContent = "Shopping"
+            NewsHeader.textContent = ""
+
+            List.innerHTML = "";
+            NewsList.innerHTML = "";
+
+            var BxM = document.createElement('li');
+            BxM.appendChild(document.createTextNode("B&M - C1-1"));
+            List.appendChild(BxM);
+
+            var TKMAXX = document.createElement('li');
+            TKMAXX.appendChild(document.createTextNode("T.K.Maxx - C1-2"));
+            List.appendChild(TKMAXX);
+
+            var RiverIsland = document.createElement('li');
+            RiverIsland.appendChild(document.createTextNode("River island - C3/4"));
+            List.appendChild(RiverIsland);
+
+            var Evans = document.createElement('li');
+            Evans.appendChild(document.createTextNode("Evans - C5/6"));
+            List.appendChild(Evans);
+
+            var Game = document.createElement('li');
+            Game.appendChild(document.createTextNode("Game - C7A"));
+            List.appendChild(Game);
+
+            var Thomson = document.createElement('li');
+            Thomson.appendChild(document.createTextNode("Thomson - C7"));
+            List.appendChild(Thomson);
+
+            var Next = document.createElement('li');
+            Next.appendChild(document.createTextNode("Next - C9"));
+            List.appendChild(Next);
+
+            var Argos = document.createElement('li');
+            Argos.appendChild(document.createTextNode("Argos - C10"));
+            List.appendChild(Argos);
+
+            var HollandAndBarrett = document.createElement('li');
+            HollandAndBarrett.appendChild(document.createTextNode("Holland & Barrett - C15A"));
+            List.appendChild(HollandAndBarrett);
+
+            var YankeeCandle = document.createElement('li');
+            YankeeCandle.appendChild(document.createTextNode("Yankee candle - C15B"));
+            List.appendChild(YankeeCandle);
+
+            var Boots = document.createElement('li');
+            Boots.appendChild(document.createTextNode("Boots - C16"));
+            List.appendChild(Boots);
+
+            var JD = document.createElement('li');
+            JD.appendChild(document.createTextNode("JD - C17"));
+            List.appendChild(JD);
+
+            var Claires = document.createElement('li');
+            Claires.appendChild(document.createTextNode("Claire's - B21"));
+            List.appendChild(Claires);
+
+            var ThomasCook = document.createElement('li');
+            ThomasCook.appendChild(document.createTextNode("ThomasCook - B20"));
+            List.appendChild(ThomasCook);
+
+            var SuperDrug = document.createElement('li');
+            SuperDrug.appendChild(document.createTextNode("SuperDrug - B18/19"));
+            List.appendChild(SuperDrug);
+
+            var BlueINC = document.createElement('li');
+            BlueINC.appendChild(document.createTextNode("Blue Inc - B16/17"));
+            List.appendChild(BlueINC);
+
+            var Clarks = document.createElement('li');
+            Clarks.appendChild(document.createTextNode("Clarks - B15"));
+            List.appendChild(Clarks);
+
+            var BellEek = document.createElement('li');
+            BellEek.appendChild(document.createTextNode("Belleek - B14B"));
+            List.appendChild(BellEek);
+
+            var PerfumeShop = document.createElement('li');
+            PerfumeShop.appendChild(document.createTextNode("Perfume shop - B14A"));
+            List.appendChild(PerfumeShop);
+
+            var Carphone = document.createElement('li');
+            Carphone.appendChild(document.createTextNode("Carphone warehouse - B12"));
+            List.appendChild(Carphone);
+
+            var CardFactory = document.createElement('li');
+            CardFactory.appendChild(document.createTextNode("Card Factory - B10/6"));
+            List.appendChild(CardFactory);
+
+            var TopGift = document.createElement('li');
+            TopGift.appendChild(document.createTextNode("Top gift - B8/2"));
+            List.appendChild(TopGift);
+
+            var Primark = document.createElement('li');
+            Primark.appendChild(document.createTextNode("Primark - X1"));
+            List.appendChild(Primark);
+
+            var Asda = document.createElement('li');
+            Asda.appendChild(document.createTextNode("Asda - X2"));
+            List.appendChild(Asda);
+
+            var Argento = document.createElement('li');
+            Argento.appendChild(document.createTextNode("Argento - B8/5"));
+            List.appendChild(Argento);
+
+            var Bonmarche = document.createElement('li');
+            Bonmarche.appendChild(document.createTextNode("Bonmarche - B8"));
+            List.appendChild(Bonmarche);
+
+            var O2 = document.createElement('li');
+            O2.appendChild(document.createTextNode("O2 - B6"));
+            List.appendChild(O2);
+
+            var CEX = document.createElement('li');
+            CEX.appendChild(document.createTextNode("CEX - B5"));
+            List.appendChild(CEX);
+
+            var WarrenJames = document.createElement('li');
+            WarrenJames.appendChild(document.createTextNode("Warren James - B4"));
+            List.appendChild(WarrenJames);
+
+            var PoundLand = document.createElement('li');
+            PoundLand.appendChild(document.createTextNode("Pound land - B2"));
+            List.appendChild(PoundLand);
+
+            var IceLand = document.createElement('li');
+            IceLand.appendChild(document.createTextNode("Iceland - 10"));
+            List.appendChild(IceLand);
+
+            var SonyCenter = document.createElement('li');
+            SonyCenter.appendChild(document.createTextNode("Sony center - 9"));
+            List.appendChild(SonyCenter);
+
+            var Cuba = document.createElement('li');
+            Cuba.appendChild(document.createTextNode("Cuba - 7"));
+            List.appendChild(Cuba);
+
+            var ShoeZone = document.createElement('li');
+            ShoeZone.appendChild(document.createTextNode("ShoeZone - 2"));
+            List.appendChild(ShoeZone);
+        }
+        function Food()
+        {
+            //document.getElementById("TheImage").src="Images/CarParks.png";
+
+            Header.textContent = "Food"
+            NewsHeader.textContent = ""
+
+            List.innerHTML = "";
+            NewsList.innerHTML = "";
+
+            var Starbucks = document.createElement('li');
+            Starbucks.appendChild(document.createTextNode("Starbucks - C1-3"));
+            List.appendChild(Starbucks);
+
+            var HomeFarmCafe = document.createElement('li');
+            HomeFarmCafe.appendChild(document.createTextNode("Home farm cafe - K3"));
+            List.appendChild(HomeFarmCafe);
+
+            var Costa = document.createElement('li');
+            Costa.appendChild(document.createTextNode("Costa - C17A"));
+            List.appendChild(Costa);
+
+            var Thorntons = document.createElement('li');
+            Thorntons.appendChild(document.createTextNode("Thorntons - B11"));
+            List.appendChild(Thorntons);
+
+            var SubWay = document.createElement('li');
+            SubWay.appendChild(document.createTextNode("SubWay - 4"));
+            List.appendChild(SubWay);
+
+            var BurgerKing = document.createElement('li');
+            BurgerKing.appendChild(document.createTextNode("BurgerKing - 12"));
+            List.appendChild(BurgerKing);
         }
         function Facilitys()
         {
-            document.getElementById("TheImage").src="Images/Facilitys.png";
+            //document.getElementById("TheImage").src="Images/CarParks.png";
+            
+            Header.textContent = "Disabled access / Facilitys"
+            NewsHeader.textContent = ""
+
+            List.innerHTML = "";
+            NewsList.innerHTML = "";
+
+            var Toilets = document.createElement('li');
+            Toilets.appendChild(document.createTextNode("Toilets - 8 - c13/14 - B3"));
+            List.appendChild(Toilets);
+
+            var ShopMobility = document.createElement('li');
+            ShopMobility.appendChild(document.createTextNode("ShopMobility - C17B"));
+            List.appendChild(ShopMobility);
+
+            var Entrances = document.createElement('li');
+            Entrances.appendChild(document.createTextNode("All entrances are disabled friendly!"));
+            List.appendChild(Entrances);
         }
-        function FoodLocations()
+        function InfoKiosks()
         {
-            document.getElementById("TheImage").src="Images/FoodLocations.png";
+            //document.getElementById("TheImage").src="Images/CarParks.png";
+            
+            Header.textContent = "Info Kiosks"
+            NewsHeader.textContent = ""
+
+            List.innerHTML = "";
+            NewsList.innerHTML = "";
+
+            var InfoKiosks1 = document.createElement('li');
+            InfoKiosks1.appendChild(document.createTextNode("Info kiosks are located at all entrances and are located on the map"));
+            List.appendChild(InfoKiosks1);
         }
-        function ParkingLocations()
+        function Help()
         {
-            document.getElementById("TheImage").src="Images/CarParks.png";
+            //document.getElementById("TheImage").src="Images/CarParks.png";
+
+            Header.textContent = "Help"
+            NewsHeader.textContent = "Using this interface"
+
+            List.innerHTML = "";
+            NewsList.innerHTML = "";
+
+            var Help1 = document.createElement('li');
+            Help1.appendChild(document.createTextNode("There are several accessability options avaliable on this interactive kiosk"));
+            List.appendChild(Help1);
+
+            var Help2 = document.createElement('li');
+            Help2.appendChild(document.createTextNode("if you need a mobility scooter you can rent one at shop mobility located at 'C17B'"));
+            List.appendChild(Help2);
+
+            var Help3 = document.createElement('li');
+            Help3.appendChild(document.createTextNode("We have Help staff located at 'C1-4' if you require any assistance"));
+            List.appendChild(Help3);
+
+            var Help4 = document.createElement('li');
+            Help4.appendChild(document.createTextNode("This Kiosk is designed to be as easy to use as possible use the navigation panel on the right to locate shops inside the mall, view our main website and change the accessability options"));
+            NewsList.appendChild(Help4);
+
+            var Help5 = document.createElement('li');
+            Help5.appendChild(document.createTextNode("You can leave feedback on this Kiosk via the Feedback button on the navigation panel we read and consider all feedback!"));
+            NewsList.appendChild(Help5);
         }
+
     </script>
 
     <div class="SideBar">
         <div class="Socials"> 
             <h2>Navigation</h2>
-            <button class="Button Button1" onclick="FloorOne()">Floor 1</button>
+            <button class="Button Button1" onclick="Home()">Home</button>
+            <button class="Button Button1" onclick="Parking()">Parking</button>
+            <button class="Button Button1" onclick="Banks()">Banks</button>
+            <button class="Button Button1" onclick="Shopping()">Shopping</button>
+            <button class="Button Button1" onclick="Food()">Food</button>
             <button class="Button Button1" onclick="Facilitys()">Facilitys</button>
-            <button class="Button Button1" onclick="FoodLocations()">Food</button>
-            <button class="Button Button1" onclick="ParkingLocations()">Parking</button>
-            <button class="Button Button1" onclick="WhatFloorAmIOn()">Where am i?</button>
+            <button class="Button Button1" onclick="InfoKiosks()">Info kiosks</button>
+            <button class="Button Button1" onclick="Help()">Help</button>
             <h2>Helpful links</h2>
-            <a href="https://goo.gl/maps/oSpFZoYY4LL65kT78"><button class="Button Button1">Google maps</button></a>
-            <a href="https://www.galleriesbristol.co.uk/"><button class="Button Button1">Our website</button></a>
-            <a href="https://www.galleriesbristol.co.uk/parking/"><button class="Button Button1">Parking info</button></a>
+            <a href="https://www.google.com/maps/place/Ards+Shopping+Centre/@54.5930043,-5.7132018,17z/data=!3m1!4b1!4m5!3m4!1s0x486174e92064201d:0x8b1eea5d45ec8071!8m2!3d54.5930012!4d-5.7110131"><button class="Button Button1">Google maps</button></a>
+            <a href="https://ardsshoppingcentre.com/"><button class="Button Button1">Our website</button></a>
+            <h2>Accessability</h2>
+            <button class="Button Button1" onclick="WhatFloorAmIOn()">Zoom in</button>
+            <button class="Button Button1" onclick="WhatFloorAmIOn()">Zoom out</button>
+
         </div>
     </div>
 
