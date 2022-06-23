@@ -1,0 +1,64 @@
+body
+{
+    background: rgb(6,0,112);
+    background-image: linear-gradient(130deg,#FF9505,#E2711D, #CC5803); 
+    height: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.HeaderNav
+{
+    padding: 1px;
+    text-align: center;
+    background: #ffb7273f;
+    color: white;
+    font-size: 20px;
+}
+
+.Button
+{
+    border: none;
+    padding: 10px;
+    background-color: #FF9505;
+}
+
+.Button:hover
+{
+    border: none;
+    background-color: #ff970579;
+}
+
+.row 
+{
+    display: flex;
+}
+  
+.column 
+{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#Spotify
+{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    display:none;
+    bottom:0px;
+    right:0px;
+    width:200px;
+}
+
+#Spotify img
+{
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
