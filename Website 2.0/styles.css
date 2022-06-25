@@ -10,7 +10,7 @@ body
 .Button
 {
     border: none;
-    padding: 12px;
+    padding: 1%;
     width: 17%;
     background-color: #41414100;
 }
@@ -19,17 +19,6 @@ body
 {
     border: none;
     background-color: #41414100;
-}
-
-.row 
-{
-    display: flex;
-}
-  
-.column 
-{
-    flex: 33.33%;
-    padding: 5px;
 }
 
 .footer {
@@ -47,38 +36,48 @@ body
     background-color: rgba(255, 255, 255, 0);
 }
   
-
-.HeaderNav a {
+.HeaderNav a 
+{
     font-size: 250%;
     float: left;
     display: inline;
     color: #05386b;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0% 1%;
     text-decoration: none;
 }
   
 
-.HeaderNav a:hover {
+.HeaderNav a:hover
+{
     color: #155ca3;
 }
 
-h1{
+h1
+{
     text-align: left;
     margin: 0;
     display: inline-block;
+    color: #05386b;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2
+{
+    color: #05386b;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .SansSerif
 {
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /* Style all font awesome icons */
 .fa{
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    padding: 1%;
+    font-size: 200%;
+    width: 10%;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -112,4 +111,20 @@ h1{
 .MintContainer
 {
     background-color: #8EE4AF;
+}
+
+.GreetingPage
+{
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+.GreetingPage h1
+{
+    font-size: 500%;
+}
+
+.GreetingPage h2
+{
+    font-size: 300%;
 }

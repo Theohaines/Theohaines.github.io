@@ -1,0 +1,286 @@
+body
+{
+    background: rgb(6,0,112);
+    background-image: linear-gradient(130deg,#850071,#010344, rgb(0, 0, 0)); 
+    height: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+h1
+{
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+}
+
+h2
+{
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+}
+
+.NavBar
+{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button
+{
+    font-family: 'Montserrat', sans-serif;
+    align-self: top;
+    background-color: #2e2e2e18;
+    border: none;
+    color: white;
+    padding: 31.25% 200%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+  
+.Button1
+{
+    background: #01034413;
+	color: #fff;
+	padding: 1% 1%;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+.Button:hover
+{
+    background-color: black;
+}
+
+.TextLabel{
+    color: #010344;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.TextInput{
+    background-color: #01034413;;
+    border-color: #01034413;
+    color: lightslategray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.GreyContainer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e2e2e00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+p
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.LatestNews
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.BlogPost
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e2e2e11;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    white-space: normal;
+    width: 75%;
+}
+
+.form-control
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background: #010344;
+    border: #2e2e2e;
+    padding: 5px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.SideBar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    bottom: 10;
+    background-color: rgba(0, 0, 0, 0.03); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.Socials
+{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    padding:30px;
+    box-sizing:border-box;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+  /* Set a specific color for each brand */
+  
+  /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+    /* Youtube */
+.fa-youtube {
+    background: #FF0000;
+    color: white;
+}
+
+    /* Spotify */
+.fa-spotify {
+    background: #1DB954;
+    color: white;
+}
+
+#Spotify
+{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    display:none;
+    bottom:0px;
+    right:0px;
+    width:200px;
+}
+
+#Spotify img
+{
+    border-radius:50%;
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+#Spotify p
+{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Spotify div
+{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
+
+.Inline{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e2e2e11;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+h6
+{
+    
+}
