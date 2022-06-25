@@ -68,6 +68,12 @@ h2
     font-family: 'Noto Sans', sans-serif;
 }
 
+h3
+{
+    color: #05386b;
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .SansSerif
 {
     font-family: 'Noto Sans', sans-serif;
@@ -128,3 +134,15 @@ h2
 {
     font-size: 300%;
 }
+
+.GreetingPage h3
+{
+    font-size: 200%;
+}
+
+.MyProjects
+{
+    padding-top: 20%;
+    background-image: url("Images/Banner.png");
+}
+
