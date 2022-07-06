@@ -1,7 +1,74 @@
 <!DOCTYPE html>
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/Favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="Spotify.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <h1>theohaines.xyz | Home</h1>
+    <title>Home</title>
+
+    <div class="NavBar">
+        <a href="index.html"><button class="Button Button1">home</button></a>
+        <a href="AboutMe.html"><button class="Button Button1">about me</button></a>
+        <a href="Software-Games.html"><button class="Button Button1">software/games</button></a>
+        <a href="Contact.html"><button class="Button Button1">contact</button></a>
+        <a href="Blog.html"><button class="Button Button1">Blog</button></a>
+    </div>
 </head>
 <body>
-  <h1>Be back soon :)</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="BlogPost" id="LatestBlog">
+        <h2 class="Latest blog">Latest blog</h2>
+        <H2>Long time, no see</H2>
+        <H5>8th June 2022</H2>
+        <P id="BlogParagraph">
+           So its been a while, i haven't updated the blog 
+           in a long time so its about time i give you guys an update.
+           the 3D pipes screensaver has been cancelled due to limitations
+           with unity and how 'good' i am at c# i will probally give it
+           another try at some other point but for now its cancelled. As
+           for the platformer i announced in my last blog post i am still
+           working on it along with some smaller projects. i thought i would 
+           have a build done alot sooner than i did. I'm Currently working on
+           polising the game for a alpha release to get some feedback and
+           ideas for new features. In news other than game development I'm
+           working on a smart mirror and i will keep you guys posted on that.
+           Thats all for now see you next time - Theo
+        </P>
+    </div>
+
+    <div class="SideBar">
+      <div id="Spotify">
+        <h3>now playing:</h3>
+        <p><a href="http://www.last.fm/user/theohaines"><img id="artwork" src=""></a></p>
+        <div id="track"></div>
+      </div>
+  <div class="Socials"> 
+    <h2>Socials:</h2>
+    <a href="https://twitter.com/TheoHainesAgain" class="fa fa-twitter"></a>
+    <a href="https://www.youtube.com/channel/UC81-5i9YzAqJRNMV3DSWKnA" class="fa fa-youtube"></a>
+    <a href="https://open.spotify.com/user/m855hhw8mad42pc4ve8dqo8i3?si=9bf1564112034fee" class="fa fa-spotify"></a>
+  </div>
+</div>
+
+
+<div>
+  <div class="Inline">
+    <a class="twitter-timeline" data-width="500" data-height="500" data-theme="dark" href="https://twitter.com/TheoHainesAgain?ref_src=twsrc%5Etfw">Tweets by TheoHainesAgain</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>  
+  <div class="Inline">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ShOgNfWonGLs9MKKcgiWP?utm_source=generator" width="500" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>  
+</div>
+
 </body>
