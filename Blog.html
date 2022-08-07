@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="Images/Favicon.ico">
+    <center>
+        <link rel="shortcut icon" type="image/x-icon" href="Images/Favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +14,18 @@
 
     <div class="NavBar">
         <a href="index.html"><button class="Button Button1">home</button></a>
-        <a href="AboutMe.html"><button class="Button Button1">about me</button></a>
         <a href="Software-Games.html"><button class="Button Button1">software/games</button></a>
         <a href="Music.html"><button class="Button Button1">Music</button></a>
         <a href="Contact.html"><button class="Button Button1">contact</button></a>
+        <a href="Photography.html"><button class="Button Button1">Photography</button></a>
         <a href="Blog.html"><button class="Button Button1">Blog</button></a>
+        <a href="Cult.html"><button class="Button Button1">Cult</button></a>
         <input type="text" id="t1" class="form-control" placeholder="Enter a date...">
         <button id="b1" class="button Button1" type="button" 
                 onclick="findString(getElementById('t1').value);">Go
         </button>
     </div>
+    </center>
 
     <script>
 var TRange=null;
@@ -66,114 +69,113 @@ function findString (str) {
     </script>
 </head>
 <body>
-
+    <center>
+        <div class="BlogPost">
+            <h1>Latest Blog</h1>
+            <H2>GameDev and Soap</H2>
+            <H5>26th July 2022</H2>
+            <P id="BlogParagraph">
+                Its been quite some time since I last updated the blog and the
+                website in general. Since the last blog post i've added a new
+                music tab to the website which showcases all the the playlists i've
+                made and will also host any music i make aswell. I'm planning on adding
+                a photography page to the website to showcase some photos i've taken on my
+                camera as well as some information on where they where taken and when.
+                I'm also working on a small soap making business to bring in some extra cash
+                so i'll keep you guys updated on that when its done. The reason i've been gone
+                for a while is because I haven't been doing so well mentally recently
+                and needed to take a break to clear my head. I'm going
+                to get back to what i was doing before fairly soon so you guys should
+                start seeing more games appear on the games page when that happens. Thats
+                about all i have to say this time thanks for visiting my small corner of
+                the internet cya next time - Theo.
+            </P>
+        </div>
     
-
-    <div class="BlogPost">
-        <h1>Latest Blog</h1>
-        <H2>GameDev and Soap</H2>
-        <H5>26th July 2022</H2>
-        <P id="BlogParagraph">
-            Its been quite some time since I last updated the blog and the
-            website in general. Since the last blog post i've added a new
-            music tab to the website which showcases all the the playlists i've
-            made and will also host any music i make aswell. I'm planning on adding
-            a photography page to the website to showcase some photos i've taken on my
-            camera as well as some information on where they where taken and when.
-            I'm also working on a small soap making business to bring in some extra cash
-            so i'll keep you guys updated on that when its done. The reason i've been gone
-            for a while is because I haven't been doing so well mentally recently
-            and needed to take a break to clear my head. I'm going
-            to get back to what i was doing before fairly soon so you guys should
-            start seeing more games appear on the games page when that happens. Thats
-            about all i have to say this time thanks for visiting my small corner of
-            the internet cya next time - Theo.
-        </P>
-    </div>
-
-    <div id="Date: 8th june 2022" class="BlogPost">
-        <H2>Long time, no see</H2>
-        <H5>8th June 2022</H2>
-        <P id="BlogParagraph">
-           So its been a while, i haven't updated the blog 
-           in a long time so its about time i give you guys an update.
-           the 3D pipes screensaver has been cancelled due to limitations
-           with unity and how 'good' i am at c# i will probally give it
-           another try at some other point but for now its cancelled. As
-           for the platformer i announced in my last blog post i am still
-           working on it along with some smaller projects. i thought i would 
-           have a build done alot sooner than i did. I'm Currently working on
-           polising the game for a alpha release to get some feedback and
-           ideas for new features. In news other than game development I'm
-           working on a smart mirror and i will keep you guys posted on that.
-           Thats all for now see you next time - Theo
-        </P>
-    </div>
-
-    <div id="Date: 10th may 2022" class="BlogPost">
-        <H2>New game announcement</H2>
-        <H5>16th may 2022</H2>
-        <P id="BlogParagraph">
-            Recently i started work on a new game which doesnt have a name yet, it is a 2d platformer shooter with a minimalistic look
-            with all the game being built out of primitive shapes. The game will have an online leaderboard hosting the top 12 scores in game
-            as well as a leaderboard on the website. This is the first game i am really proud of and I can't wait to share it with you 
-            guys. I will create a itch.io page for the game soon and will release screenshots soon, I will also continue to update the game for
-            the following months after the games release and will continue to fix and add new features. Thats all for now hope you are looking
-            forward to it - Theo 
-        </P>
-    </div>
-
-    <div id="Date: 10th may 2022" class="BlogPost">
-        <H2>Classic screensavers bundle announcement</H2>
-        <H5>10th may 2022</H2>
-        <P id="BlogParagraph">
-            Remember the 3d pipes screensaver for windows 95? well i'm recreating it in the unity engine, i will release it
-            in a few days and the project will be called "3D pipes". you can visit the project page using the link below and i 
-            will post devlogs on the progress of the development for the next few days. The software will have several features 
-            such as spawning multiple arrays of pipes and freecam around the map. Thats all for now can't wait to reveal the finished
-            project - Theo.
-        </P>
-        <a href="https://theohaines.itch.io/3d-pipes"><button class="Button Button1">3D-Pipes</button></a>
-    </div>
-
-
-    <div id="Date: 8th may 2022" class="BlogPost">
-        <H2>Website Major update 1</H2>
-        <H5>8th may 2022</H2>
-        <P id="BlogParagraph">
-            This website has just gotten its first major update in form of a side bar on the home page which contains the song that is now playing on my spotify or the most recently
-             played. It also hosts the links to my public social media pages aswell as my spotify page. There has also been some updates to the way text is displayed
-              on the website and other optimisation changes. Thats all for now hope you enjoy the new features - Theo
-        </P>
-    </div>
-
-    <div id="Date: 7th may 2022" class="BlogPost">
-        <H2>Introducing: VestaMessages</H2>
-        <H5>7th may 2022</H2>
-        <P id="BlogParagraph">
-            I have created a new web app/ app for android called VestaMessages designed after the product VestaBoard. Using VestaMessages you can create VestaBoard style messages and 
-            share them with friends. To send a message to a friend you can create your message on the app and then click export, clicking export will generate a string that you can copy 
-            and send to friends. All your friends need to do is paste the encoded string into the decoder box and click decode and it will play the message. Currently there isn't any 
-            support for emojis or coloured text although i have plans to try to add support in the future. You can access the app from the link below or by going to the games/software 
-            section of the website. Thats all for now, happy messaging - Theo
-        </P>
-        <a href="https://theohaines.itch.io/vestamessages"><button class="Button Button1">VestaMessages</button></a>
-    </div>
-
-    <div id="Date: 6th may 2022" class="BlogPost">
-        <h2 id="Blog Title">This is my first blog post here</h2>
-        <h5 id="Date of post">6th may 2022</h5>
-        <p id="BlogParagraph">
-            This is mainly just a test of the blog system i've made but i also want to list a few things that'll be posted here such as: <br>
-            <ul>
-                <li>Devlogs</li>
-                <li>General news</li>
-                <li>Game assets</li>
-                <li>and more!</li>
-            </ul>
-            You can access the Blog page from the blog button on the website header or you can see the latest blog on the website homepage. To be honest i didn't think i'd accatually
-            end up using the domain in the end but apparently i did and were here now. I will probally also add to the website as time goes on if you have any suggestions feel free
-            to contact me using the contact page on the website. Thats all for now i think thanks for reading - Theo
-        </p>
-    </div>
+        <div id="Date: 8th june 2022" class="BlogPost">
+            <H2>Long time, no see</H2>
+            <H5>8th June 2022</H2>
+            <P id="BlogParagraph">
+               So its been a while, i haven't updated the blog 
+               in a long time so its about time i give you guys an update.
+               the 3D pipes screensaver has been cancelled due to limitations
+               with unity and how 'good' i am at c# i will probally give it
+               another try at some other point but for now its cancelled. As
+               for the platformer i announced in my last blog post i am still
+               working on it along with some smaller projects. i thought i would 
+               have a build done alot sooner than i did. I'm Currently working on
+               polising the game for a alpha release to get some feedback and
+               ideas for new features. In news other than game development I'm
+               working on a smart mirror and i will keep you guys posted on that.
+               Thats all for now see you next time - Theo
+            </P>
+        </div>
+    
+        <div id="Date: 10th may 2022" class="BlogPost">
+            <H2>New game announcement</H2>
+            <H5>16th may 2022</H2>
+            <P id="BlogParagraph">
+                Recently i started work on a new game which doesnt have a name yet, it is a 2d platformer shooter with a minimalistic look
+                with all the game being built out of primitive shapes. The game will have an online leaderboard hosting the top 12 scores in game
+                as well as a leaderboard on the website. This is the first game i am really proud of and I can't wait to share it with you 
+                guys. I will create a itch.io page for the game soon and will release screenshots soon, I will also continue to update the game for
+                the following months after the games release and will continue to fix and add new features. Thats all for now hope you are looking
+                forward to it - Theo 
+            </P>
+        </div>
+    
+        <div id="Date: 10th may 2022" class="BlogPost">
+            <H2>Classic screensavers bundle announcement</H2>
+            <H5>10th may 2022</H2>
+            <P id="BlogParagraph">
+                Remember the 3d pipes screensaver for windows 95? well i'm recreating it in the unity engine, i will release it
+                in a few days and the project will be called "3D pipes". you can visit the project page using the link below and i 
+                will post devlogs on the progress of the development for the next few days. The software will have several features 
+                such as spawning multiple arrays of pipes and freecam around the map. Thats all for now can't wait to reveal the finished
+                project - Theo.
+            </P>
+            <a href="https://theohaines.itch.io/3d-pipes"><button class="Button Button1">3D-Pipes</button></a>
+        </div>
+    
+    
+        <div id="Date: 8th may 2022" class="BlogPost">
+            <H2>Website Major update 1</H2>
+            <H5>8th may 2022</H2>
+            <P id="BlogParagraph">
+                This website has just gotten its first major update in form of a side bar on the home page which contains the song that is now playing on my spotify or the most recently
+                 played. It also hosts the links to my public social media pages aswell as my spotify page. There has also been some updates to the way text is displayed
+                  on the website and other optimisation changes. Thats all for now hope you enjoy the new features - Theo
+            </P>
+        </div>
+    
+        <div id="Date: 7th may 2022" class="BlogPost">
+            <H2>Introducing: VestaMessages</H2>
+            <H5>7th may 2022</H2>
+            <P id="BlogParagraph">
+                I have created a new web app/ app for android called VestaMessages designed after the product VestaBoard. Using VestaMessages you can create VestaBoard style messages and 
+                share them with friends. To send a message to a friend you can create your message on the app and then click export, clicking export will generate a string that you can copy 
+                and send to friends. All your friends need to do is paste the encoded string into the decoder box and click decode and it will play the message. Currently there isn't any 
+                support for emojis or coloured text although i have plans to try to add support in the future. You can access the app from the link below or by going to the games/software 
+                section of the website. Thats all for now, happy messaging - Theo
+            </P>
+            <a href="https://theohaines.itch.io/vestamessages"><button class="Button Button1">VestaMessages</button></a>
+        </div>
+    
+        <div id="Date: 6th may 2022" class="BlogPost">
+            <h2 id="Blog Title">This is my first blog post here</h2>
+            <h5 id="Date of post">6th may 2022</h5>
+            <p id="BlogParagraph">
+                This is mainly just a test of the blog system i've made but i also want to list a few things that'll be posted here such as: <br>
+                <ul>
+                    <li>Devlogs</li>
+                    <li>General news</li>
+                    <li>Game assets</li>
+                    <li>and more!</li>
+                </ul>
+                You can access the Blog page from the blog button on the website header or you can see the latest blog on the website homepage. To be honest i didn't think i'd accatually
+                end up using the domain in the end but apparently i did and were here now. I will probally also add to the website as time goes on if you have any suggestions feel free
+                to contact me using the contact page on the website. Thats all for now i think thanks for reading - Theo
+            </p>
+        </div>
+    </center>    
 </body>

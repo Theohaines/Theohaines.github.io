@@ -24,6 +24,14 @@ h2
     text-shadow: 2px 2px rgb(6,0,112,);
 }
 
+h3
+{
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+}
+
 .NavBar
 {
     color: whitesmoke;
@@ -294,3 +302,50 @@ h5
 {
     padding-left: 2%;
 }
+
+.IAM h1
+{
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+    font-size: 500%;
+}
+
+.row 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+  /* Create four equal columns that sits next to each other */
+  .column 
+{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+  .column img
+{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
