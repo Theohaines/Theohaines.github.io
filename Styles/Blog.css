@@ -20,14 +20,6 @@ h2
     text-shadow: 2px 2px rgb(6,0,112,);
 }
 
-h3
-{
-    color:rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-shadow: 2px 2px rgb(6,0,112,);
-}
-
 .NavBar
 {
     color: whitesmoke;
@@ -69,33 +61,14 @@ h3
     background-color: rgb(112, 112, 112);
 }
 
-.Inline{
-    display: inline-block;
-    width: auto;
-    height: auto;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #2e2e2e00;
-    border: none;
+.form-control
+{
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-}
-
-.Zoom
-{
-    transition: transform .2s;
-}
-
-.Zoom:hover 
-{
-    transform: scale(1.5);
-}
-
-.MyPlaylists
-{
-    padding-left: 2%;
-    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background: #CECECE;
+    border: #2e2e2e;
+    padding: 5px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 767px) {
@@ -110,7 +83,7 @@ h3
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: 16px;
     }
   
     .Button1
@@ -132,27 +105,6 @@ h3
     .Button:hover
     {
     background-color: rgb(112, 112, 112);
-    }
-    .Inline{
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        font-family: 'Montserrat', sans-serif;
-        background-color: #2e2e2e00;
-        border: none;
-        color: black;
-        padding: 15px 0px;
-        text-align: center;
-        display: inline-block;
-    }
-    .Zoom
-    {
-    transition: transform .2s;
-    }
-
-    .Zoom:hover 
-    {
-    transform: scale(1.2);
     }
     .Title
     {

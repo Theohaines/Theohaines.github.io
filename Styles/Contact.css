@@ -20,14 +20,6 @@ h2
     text-shadow: 2px 2px rgb(6,0,112,);
 }
 
-h3
-{
-    color:rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-shadow: 2px 2px rgb(6,0,112,);
-}
-
 .NavBar
 {
     color: whitesmoke;
@@ -69,33 +61,48 @@ h3
     background-color: rgb(112, 112, 112);
 }
 
-.Inline{
-    display: inline-block;
-    width: auto;
-    height: auto;
+.TextLabel{
+    color: #010344;
     font-family: 'Montserrat', sans-serif;
-    background-color: #2e2e2e00;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
 }
 
-.Zoom
-{
-    transition: transform .2s;
-}
-
-.Zoom:hover 
-{
-    transform: scale(1.5);
-}
-
-.MyPlaylists
-{
-    padding-left: 2%;
+.TextInput{
+    background-color: #cecece;;
+    border-color: #01034413;
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    resize: vertical;
+    height: 500px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-facebook {
+    background: #3b5998;
+    color: white;
 }
 
 @media (max-width: 767px) {
@@ -110,7 +117,7 @@ h3
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: 16px;
     }
   
     .Button1
@@ -128,31 +135,9 @@ h3
 	font-size: 20px;
 	border-radius: 5px;
     }
-
     .Button:hover
     {
     background-color: rgb(112, 112, 112);
-    }
-    .Inline{
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        font-family: 'Montserrat', sans-serif;
-        background-color: #2e2e2e00;
-        border: none;
-        color: black;
-        padding: 15px 0px;
-        text-align: center;
-        display: inline-block;
-    }
-    .Zoom
-    {
-    transition: transform .2s;
-    }
-
-    .Zoom:hover 
-    {
-    transform: scale(1.2);
     }
     .Title
     {

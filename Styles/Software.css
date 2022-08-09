@@ -73,7 +73,7 @@ h2
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: 16px;
     }
   
     .Button1
@@ -95,5 +95,13 @@ h2
     .Button:hover
     {
     background-color: rgb(112, 112, 112);
+    }
+    .Title
+    {
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+    width:max-content;
     }
 }

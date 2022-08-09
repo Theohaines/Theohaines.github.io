@@ -9,7 +9,8 @@ var quotes = ['"To know your Enemy, you must become your Enemy." - Sun Tzu',
 '"AAAAAAAAAAAAAGGHHH IT BURNS" - Lilly',
 '"Join him" - Me',
 '"https://www.youtube.com/watch?v=dQw4w9WgXcQ" - Somebody',
-'"There are no sides, just people that help you and people that don\'t" - Jessica Hyde'];
+'"There are no sides, just people that help you and people that don\'t" - Jessica Hyde',
+'"I need quotes, Theo said to me so this is my quote" - Emily'];
 
 var Quotebox = document.getElementById("Quote");
 var Rand = Math.floor(Math.random()*quotes.length);

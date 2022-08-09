@@ -206,6 +206,32 @@ h3
     font-size: 225%;
 }
 
+.AboutMe
+{
+    padding-top: 200px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.AboutMe h1
+{
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+    font-size: 500%;
+}
+
+.AboutMe h2
+{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+    font-size: 225%;
+}
+
 
 @media (max-width: 767px) {
     .SideBar
@@ -239,7 +265,7 @@ h3
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: 16px;
     }
   
     .Button1
@@ -261,5 +287,35 @@ h3
     .Button:hover
     {
     background-color: rgb(112, 112, 112);
+    }
+    .Title
+    {
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+    width:max-content;
+    }
+    .Quote
+    {
+        width:fit-content;
+    }
+
+    .AboutMe h1
+    {
+        color:rgb(0, 0, 0);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-shadow: 2px 2px rgb(6,0,112,);
+        font-size: 250%;
+    }
+
+    .AboutMe h2
+    {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+    font-size: 100%;
     }
 }
