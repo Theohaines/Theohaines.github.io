@@ -20,6 +20,14 @@ h2
     text-shadow: 2px 2px rgb(6,0,112,);
 }
 
+h3
+{
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+}
+
 .NavBar
 {
     color: whitesmoke;
@@ -115,3 +123,30 @@ h2
     width:max-content;
     }
 }
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	transition: 1s all;
+    background: #01034413;
+	color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: rgb(112, 112, 112);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #CECECE;
+  }
