@@ -20,10 +20,21 @@
             <a href="Music.html"><button class="Button Button1">Music</button></a>
             <a href="Contact.html"><button class="Button Button1">contact</button></a>
             <a href="Blog.html"><button class="Button Button1">Blog</button></a>
-            <input type="text" id="t1" class="form-control" placeholder="Enter a date...">
+        </div>
+        <div class="FilterBar">
+            <input type="checkbox" id="All" name="All" value="All" class="CheckBox" onchange="Reset()">
+            <label for="All"> All</label>
+            <input type="checkbox" id="PhotographyCheck" name="Photography" value="Photography" class="CheckBox" onchange="FilterPhotography()">
+            <label for="PhotographyCheck"> Photography</label>
+            <input type="checkbox" id="WebsiteUpdateCheck" name="WebsiteUpdateCheck" value="WebsiteUpdateCheck" class="CheckBox" onchange="Updates()">
+            <label for="WebsiteUpdateCheck"> Updates</label>
+            <input type="checkbox" id="SoftwareCheck" name="SoftwareCheck" value="SoftwareCheck" class="CheckBox" onchange="Software()">
+            <label for="SoftwareCheck"> Software</label>
+
+            <!--<input type="text" id="t1" class="form-control" placeholder="Enter a date...">
             <button id="b1" class="button Button1" type="button" 
                 onclick="findString(getElementById('t1').value);">Go
-            </button>
+            </button>-->
         </div>
     </center>
 
@@ -74,7 +85,31 @@ function findString (str) {
     <br>
     <br>
     <center>   
-        <button type="button" class="collapsible">Major website update 2 | 12th August 2022</button>
+        <button type="button" class="collapsible" id="Photography">Photography dump 1 | 14th August 2022</button>
+        <div class="content">
+            <div class="BlogPost">
+                <H2>Photography dump 1</H2>
+                <H5>14th August 2022</H2>
+                <P id="BlogParagraph">
+                    Welcome to my first of many photography dumps I will be doing on this
+                    website. Each dump will contain a few heighlights from recently taken
+                    photos. With the introduction of photography dumps a filter system has
+                    been added to the website to help users filter content.
+
+                    <h3>| Highlights 12th - 13th august |</h3>
+
+                    <div class="Inline">
+                        <img class="Photo" src="Images/Photography/Dumps/12.08.22 - 13-08-22/Sunset (1).JPG" alt="Sunset">
+                        <img class="Photo" src="Images/Photography/Dumps/12.08.22 - 13-08-22/Sunset (12).JPG" alt="Sunset">
+                        <img class="Photo" src="Images/Photography/Dumps/12.08.22 - 13-08-22/Sunset (35).JPG" alt="Sunset">
+                        <img class="Photo" src="Images/Photography/Dumps/12.08.22 - 13-08-22/Sunset (53).JPG" alt="Sunset">
+                        <img class="Photo" src="Images/Photography/Dumps/12.08.22 - 13-08-22/Sunset (89).JPG" alt="Sunset">
+                    </div>
+                </P>
+            </div>
+        </div>
+
+        <button type="button" class="collapsible" id="WebsiteUpdate">Major website update 2 | 12th August 2022</button>
         <div class="content">
             <div class="BlogPost">
                 <H2>Major website update 2</H2>
@@ -102,7 +137,7 @@ function findString (str) {
             </div>
         </div>
 
-        <button type="button" class="collapsible">GameDev and Soap | 26th July 2022</button>
+        <button type="button" class="collapsible" id="Software">GameDev and Soap | 26th July 2022</button>
         <div class="content">
             <div class="BlogPost">
                 <H2>GameDev and Soap</H2>
@@ -126,7 +161,7 @@ function findString (str) {
             </div>
         </div>
     
-        <button type="button" class="collapsible">Long time, no see | 8th june 2022</button>
+        <button type="button" class="collapsible" id="Normal">Long time, no see | 8th june 2022</button>
         <div class="content">
             <div id="Date: 8th june 2022" class="BlogPost">
                 <H2>Long time, no see</H2>
@@ -148,7 +183,7 @@ function findString (str) {
             </div>
         </div>
 
-        <button type="button" class="collapsible">New game announcement | 10th may 2022</button>
+        <button type="button" class="collapsible" id="Software">New game announcement | 10th may 2022</button>
         <div class="content">
             <div id="Date: 10th may 2022" class="BlogPost">
                 <H2>New game announcement</H2>
@@ -164,7 +199,7 @@ function findString (str) {
             </div>
         </div>
 
-        <button type="button" class="collapsible">Classic screensavers bundle announcement | 10th may 2022</button>
+        <button type="button" class="collapsible" id="Software">Classic screensavers bundle announcement | 10th may 2022</button>
         <div class="content">
             <div id="Date: 10th may 2022" class="BlogPost">
                 <H2>Classic screensavers bundle announcement</H2>
@@ -180,7 +215,7 @@ function findString (str) {
             </div>
         </div>
 
-        <button type="button" class="collapsible">Website Major update 1 | 8th may 2022</button>
+        <button type="button" class="collapsible" id="WebsiteUpdate">Website Major update 1 | 8th may 2022</button>
         <div class="content">
             <div id="Date: 8th may 2022" class="BlogPost">
                 <H2>Website Major update 1</H2>
@@ -193,7 +228,7 @@ function findString (str) {
             </div>
         </div>
         
-        <button type="button" class="collapsible">Introducing: VestaMessages | 7th may 2022</button>
+        <button type="button" class="collapsible" id="Software">Introducing: VestaMessages | 7th may 2022</button>
         <div class="content">
             <div id="Date: 7th may 2022" class="BlogPost">
                 <H2>Introducing: VestaMessages</H2>
@@ -209,7 +244,7 @@ function findString (str) {
             </div>
         </div>
 
-        <button type="button" class="collapsible">First Post | 6th May 2022</button>
+        <button type="button" class="collapsible" id="Normal">First Post | 6th May 2022</button>
         <div class="content">
             <h2 id="Blog Title">This is my first blog post here</h2>
             <h5 id="Date of post">6th may 2022</h5>
@@ -244,4 +279,82 @@ function findString (str) {
         }
     });
 }
+</script>
+
+<script>
+    var NormalElements = document.querySelectorAll('[id=Normal]');
+    var PhotographyElements = document.querySelectorAll('[id=Photography]');
+    var UpdateElements = document.querySelectorAll('[id=WebsiteUpdate]');
+    var SoftwareElements = document.querySelectorAll('[id=Software]');
+
+    function Reset()
+    {
+        for (let i = 0; i < document.getElementsByClassName("collapsible").length; i++) {
+            document.getElementsByClassName("collapsible")[i].style.display = "block";
+        }
+        
+        document.getElementById("PhotographyCheck").checked = false;
+        document.getElementById("WebsiteUpdateCheck").checked = false;
+        document.getElementById("SoftwareCheck").checked = false;
+    };
+
+    function FilterPhotography()
+    {
+        for (let i = 0; i < PhotographyElements.length; i++) {
+            document.querySelectorAll('[id=Photography]')[i].style.display = "block";
+        }
+        for (let i = 0; i < UpdateElements.length; i++) {
+            document.querySelectorAll('[id=WebsiteUpdate]')[i].style.display = "none";
+        }
+        for (let i = 0; i < NormalElements.length; i++) {
+            document.querySelectorAll('[id=Normal]')[i].style.display = "none";
+        }
+        for (let i = 0; i < SoftwareElements.length; i++) {
+            document.querySelectorAll('[id=Software]')[i].style.display = "none";
+        }
+
+        document.getElementById("All").checked = false;
+        document.getElementById("WebsiteUpdateCheck").checked = false;
+        document.getElementById("SoftwareCheck").checked = false;
+    };
+
+    function Updates()
+    {
+        for (let i = 0; i < UpdateElements.length; i++) {
+            document.querySelectorAll('[id=WebsiteUpdate]')[i].style.display = "block";
+        }
+        for (let i = 0; i < PhotographyElements.length; i++) {
+            document.querySelectorAll('[id=Photography]')[i].style.display = "none";
+        }
+        for (let i = 0; i < NormalElements.length; i++) {
+            document.querySelectorAll('[id=Normal]')[i].style.display = "none";
+        }
+        for (let i = 0; i < SoftwareElements.length; i++) {
+            document.querySelectorAll('[id=Software]')[i].style.display = "none";
+        }
+
+        document.getElementById("All").checked = false;
+        document.getElementById("PhotographyCheck").checked = false;
+        document.getElementById("SoftwareCheck").checked = false;
+    };
+
+    function Software()
+    {
+        for (let i = 0; i < SoftwareElements.length; i++) {
+            document.querySelectorAll('[id=Software]')[i].style.display = "block";
+        }
+        for (let i = 0; i < UpdateElements.length; i++) {
+            document.querySelectorAll('[id=WebsiteUpdate]')[i].style.display = "none";
+        }
+        for (let i = 0; i < PhotographyElements.length; i++) {
+            document.querySelectorAll('[id=Photography]')[i].style.display = "none";
+        }
+        for (let i = 0; i < NormalElements.length; i++) {
+            document.querySelectorAll('[id=Normal]')[i].style.display = "none";
+        }
+
+        document.getElementById("All").checked = false;
+        document.getElementById("PhotographyCheck").checked = false;
+        document.getElementById("WebsiteUpdateCheck").checked = false;
+    };
 </script>
