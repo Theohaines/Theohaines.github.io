@@ -10,7 +10,6 @@ var quotes = ['"To know your Enemy, you must become your Enemy." - Sun Tzu',
 '"Join him" - Me',
 '"https://www.youtube.com/watch?v=dQw4w9WgXcQ" - Somebody',
 '"There are no sides, just people that help you and people that don\'t" - Jessica Hyde',
-'"I need quotes, Theo said to me so this is my quote" - Emily',
 '"This website is very mobile friendly 10/10" - Billy joe bob son of billy bob'];
 
 var Quotebox = document.getElementById("Quote");
