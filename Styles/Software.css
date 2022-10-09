@@ -106,3 +106,27 @@ h2
     font-size: 175%;
     }
 }
+
+.Inline
+{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e2e2e00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.Zoom
+{
+    transition: transform .2s;
+}
+
+.Zoom:hover 
+{
+    transform: scale(1.5);
+}
