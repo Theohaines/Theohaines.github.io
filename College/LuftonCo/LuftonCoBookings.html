@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <div class="NavBar">
+        <h1>Lufton Co</h1>
+        <a href="LuftonCoHome.html"><button class="Button">Home</button></a>
+        <a href="LuftonCoAbout.html"><button class="Button">About us</button></a>
+        <a href="LuftonCoBookings.html"><button class="Button">Bookings</button></a>
+        <a href="LuftonCoContact.html"><button class="Button">Contact</button></a>
+        <div class="dropdown">
+            <button class="dropbtn">Other</button>
+            <div class="dropdown-content">
+              <a href="https://donate.redcross.org.uk/appeal/general-fund-appeal?c_code=175151&c_source=google&c_name=General%20Fund%20Appeal&adg=pure%20brand&c_creative=brand&c_medium=cpc">RedCross</a>
+              <a href="https://rspca-bedfordshiresouth.org.uk/">RSPCA</a>
+              <a href="https://theohaines.xyz">Propa-G8</a>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+    <div class="TransparentContainer">
+        <h2>Book an event</h2>
+        <form action="reservation.php" method="post">
+            <div class="elem-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label for="email">Your E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Your Phone</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+              <label for="adult">Number of guests</label>
+              <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="checkin-date">Check-in Date</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <hr>
+            <div class="elem-group">
+              <label for="message">Anything Else?</label>
+              <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+            </div>
+            <button type="submit" class="Button">Book The Rooms</button>
+          </form>
+    </div>
+</body>
+
+<script>
+    var currentDateTime = new Date();
+    var year = currentDateTime.getFullYear();
+    var month = (currentDateTime.getMonth() + 1);
+    var date = (currentDateTime.getDate() + 1);
+
+    if(date < 10) {
+        date = '0' + date;
+    }
+    if(month < 10) {
+        month = '0' + month;
+    }
+
+    var dateTomorrow = year + "-" + month + "-" + date;
+    var checkinElem = document.querySelector("#checkin-date");
+    var checkoutElem = document.querySelector("#checkout-date");
+
+    checkinElem.setAttribute("min", dateTomorrow);
+
+    checkinElem.onchange = function () {
+        checkoutElem.setAttribute("min", this.value);
+    }
+</script>

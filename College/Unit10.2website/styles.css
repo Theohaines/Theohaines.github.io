@@ -1,0 +1,194 @@
+body
+{
+    background: rgb(6,0,112);
+    background-image: linear-gradient(180deg,#4f006c,#d000ff); 
+    height: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+h1
+{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button
+{
+    font-family: 'Montserrat', sans-serif;
+    align-self: top;
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    padding: 62.5% 200%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+  
+.Button1
+{
+    background: #01034465;
+	color: #fff;
+	padding: 20px 20px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+.Button:hover
+{
+    background-color: black;
+}
+
+.TransparentContainer
+{
+    border-radius: auto;
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+
+.sidenav {
+    height: 100%; 
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.112); 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+  
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+ 
+  .main {
+    margin-left: 160px; 
+    padding: 0px 10px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .SideBar {
+    height: 100%; 
+    width: 210px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    right: 0;
+    bottom: 10;
+    background-color: rgba(0, 0, 0, 0.078); 
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+
+.Socials
+{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    padding:30px;
+    box-sizing:border-box;
+}
+
+.scroll-left {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: orange;
+    border: 1px solid rgb(81, 81, 81);
+   }
+   .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+
+    transform:translateX(100%);
+
+    animation: scroll-left 15s linear infinite;
+   }
+
+   @keyframes scroll-left {
+    0%   {
+    transform: translateX(100%); 		
+    }
+    100% {
+    transform: translateX(-100%); 
+    }
+   }
+
+p
+{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2
+{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+.InfoList{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    font-size: 112.5%;
+}
+
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 180px;
+  height: 180px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+}
