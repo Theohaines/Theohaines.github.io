@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Styles/Home.css">
+
+    <title>chic-O-land</title>
+
+    <div class="Header">
+        <h1 id="Title">chic-O-land</h1>
+    </div>
+</head>
+
+<body>
+    <div class="Navigation">
+        <button onclick="HomeMenu()">Home</button>
+        <button onclick="Sandwiches()">Sandwiches</button>
+        <button onclick="Drinks()">Drinks</button>
+        <button onclick="SidesAndDips()">Sides and dips</button>
+        <button onclick="Desserts()">Desserts</button>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="Menu">
+        <center>           
+            <div class="Product" id="Product001">
+                <img src="Images/Products/Thumbs/ChickenMayoSandwich.png" alt="Chicken mayo sandwich">
+                <h2>Chicken mayo sandwich</h2>
+                <h3>Price: £3.99</h3>
+                <button onclick="AddToBasket(3.99, 'Chicken mayo sandwich')">Add to order</button>
+            </div>
+            <div class="Product" id="Product002">
+                <img src="Images/Products/Thumbs/BaconAndChickenMayoSandwich.png" alt="Bacon and chicken mayo sandwich">
+                <h2>Bacon mayo sandwich</h2>
+                <h3>Price: £4.49</h3>
+                <button onclick="AddToBasket(4.49, 'Bacon and chicken mayo sandwich')">Add to order</button>
+            </div>
+            <div class="Product" id="Product003">
+                <img src="Images/Products/Thumbs/TheChickenSupreme.png" alt="The chicken supreme">
+                <h2>The chicken supreme</h2>
+                <h3>Price: £5.99</h3>
+                <button onclick="AddToBasket(5.99, 'The chicken supreme')">Add to order</button>
+            </div>
+            <div class="Product" id="Product004">
+                <img src="Images/Products/Thumbs/TheClassic.png" alt="The classic">
+                <h2>The classic</h2>
+                <h3>Price: £2.49</h3>
+                <button onclick="AddToBasket(2.49, 'The classic')">Add to order</button>
+            </div>
+            <div class="Product" id="Product005">
+                <img src="Images/Products/Thumbs/BBqChickenSandwich.png" alt="BBQ chicken sandwich">
+                <h2>BBQ chicken sandwich</h2>
+                <h3>Price: £3.99</h3>
+                <button onclick="AddToBasket(3.99, 'BBQ chicken sandwich')">Add to order</button>
+            </div>
+            <div class="Product" id="Product006">
+                <img src="Images/Products/Thumbs/SpicyChickenSandwich.png" alt="Spicy chicken sandwich">
+                <h2>Spicy chicken sandwich</h2>
+                <h3>Price: £3.49</h3>
+                <button onclick="AddToBasket(3.49, 'Spicy chicken sandwich')">Add to order</button>
+            </div>
+            <div class="Product" id="Product007">
+                <img src="Images/Products/Thumbs/CocaColaZero.png" alt="CocaCola zero">
+                <h2>Coca-Cola zero</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Coca-Cola zero')">Add to order</button>
+            </div>
+            <div class="Product" id="Product008">
+                <img src="Images/Products/Thumbs/Fanta.png" alt="Fanta">
+                <h2>Fanta</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Fanta')">Add to order</button>
+            </div>
+            <div class="Product" id="Product009">
+                <img src="Images/Products/Thumbs/DietCoke.png" alt="Diet coke">
+                <h2>Diet coke</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Diet coke')">Add to order</button>
+            </div>
+            <div class="Product" id="Product010">
+                <img src="Images/Products/Thumbs/SpriteZero.png" alt="Sprite zero">
+                <h2>Sprite zero</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Sprite zero')">Add to order</button>
+            </div>
+            <div class="Product" id="Product011">
+                <img src="Images/Products/Thumbs/Oasis.png" alt="Oasis">
+                <h2>Oasis</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Oasis')">Add to order</button>
+            </div>
+            <div class="Product" id="Product012">
+                <img src="Images/Products/Thumbs/FruitShoot.png" alt="Fruit shoot">
+                <h2>Fruit shoot</h2>
+                <h3>Price: 99p</h3>
+                <button onclick="AddToBasket(0.99, 'Fruit shoot')">Add to order</button>
+            </div>
+            <div class="Product" id="Product013">
+                <img src="Images/Products/Thumbs/Water.png" alt="Water">
+                <h2>Water</h2>
+                <h3>Price: 99p</h3>
+                <button onclick="AddToBasket(0.99, 'Water')">Add to order</button>
+            </div>
+            <div class="Product" id="Product014">
+                <img src="Images/Products/Thumbs/ChickenDippers.png" alt="Chicken dippers">
+                <h2>Chicken dippers</h2>
+                <h3>Price: £1.49</h3>
+                <button onclick="AddToBasket(1.49, 'chicken dippers')">Add to order</button>
+            </div>
+            <div class="Product" id="Product015">
+                <img src="Images/Products/Thumbs/ChickenNuggets.png" alt="Chicken nuggets">
+                <h2>Chicken nuggets</h2>
+                <h3>Price: £1.49</h3>
+                <button onclick="AddToBasket(1.49, 'chicken nuggets')">Add to order</button>
+            </div>
+            <div class="Product" id="Product016">
+                <img src="Images/Products/Thumbs/BBqDip.png" alt="BBQ dip">
+                <h2>BBQ dip</h2>
+                <h3>Price: 40p</h3>
+                <button onclick="AddToBasket(0.40, 'BBQ dip')">Add to order</button>
+            </div>
+            <div class="Product" id="Product017">
+                <img src="Images/Products/Thumbs/SourCreamAndChiveDip.png" alt="Sour cream and chive dip">
+                <h2>Sour cream and chive dip</h2>
+                <h3>Price: 40p</h3>
+                <button onclick="AddToBasket(0.40, 'sour cream and chive dip')">Add to order</button>
+            </div>
+            <div class="Product" id="Product018">
+                <img src="Images/Products/Thumbs/SweetAndSourDip.png" alt="Sweet and sour dip">
+                <h2>Sweet and sour dip</h2>
+                <h3>Price: 40p</h3>
+                <button onclick="AddToBasket(0.40, 'Sweet and sour dip')">Add to order</button>
+            </div>
+            <div class="Product" id="Product019">
+                <img src="Images/Products/Thumbs/TomatoKetchupDip.png" alt="Tomato ketchup dip">
+                <h2>Tomato ketchup dip</h2>
+                <h3>Price: 40p</h3>
+                <button onclick="AddToBasket(0.40, 'Tomato ketchup dip')">Add to order</button>
+            </div>
+            <div class="Product" id="Product020">
+                <img src="Images/Products/Thumbs/ChocolateBrownie.png" alt="Chocolate brownie">
+                <h2>Chocolate brownie</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'chocolate brownie')">Add to order</button>
+            </div>
+            <div class="Product" id="Product021">
+                <img src="Images/Products/Thumbs/MillionairesDonut.png" alt="Millionaires donut">
+                <h2>Millionaires donut</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Millionaires donut')">Add to order</button>
+            </div>
+            <div class="Product" id="Product022">
+                <img src="Images/Products/Thumbs/MixedBerryMuffin.png" alt="Mixed berry muffin">
+                <h2>Mixed berry muffin</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Mixed berry muffin')">Add to order</button>
+            </div>
+            <div class="Product" id="Product023">
+                <img src="Images/Products/Thumbs/SugarDonut.png" alt="Sugar donut">
+                <h2>Sugar donut</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Sugar donut')">Add to order</button>
+            </div>
+            <div class="Product" id="Product024">
+                <img src="Images/Products/Thumbs/TripleChocolateCookie.png" alt="Triple chocolate cookie">
+                <h2>Triple chocolate cookie</h2>
+                <h3>Price: £1.29</h3>
+                <button onclick="AddToBasket(1.29, 'Triple chocolate cookie')">Add to order</button>
+            </div>
+
+            <div class="Basket" id="Basket" style="display: none";>
+                <h1 id="OrderTitle">Your order</h1>
+                <div class="OrderedItems" id="OrderedItems">
+
+                </div>
+
+                <button onclick="CloseBasket()">Close basket</button>
+            </div>
+        </center>
+    </div>
+   
+
+    <div class="Footer">
+        <center>
+            <h2 id="Total">Total: £0.00</h2>
+            <button onclick="LoadBasket()">Go to basket</button>
+        </center>
+    </div>
+
+    <div class="Accessability">
+        <h2 id="Accessability">Accessability</h2>
+        <button onclick="HighContrast()">High contrast mode</button>
+        <button onclick="LargeText()">Large text</button>
+        <button onclick="Sound()">Audio description</button>
+        <button onclick="Reset()">Restore defaults</button>
+    </div>
+</body>
+
+<script>
+
+    TotalText = document.getElementById("Total")
+    TotalPrice = 0.00
+
+    const AllPrices = [];
+    const AllProducts = [];
+
+    function SetAllProductHidden()
+    {
+        document.getElementById("Product001").style.display = "none";
+        document.getElementById("Product002").style.display = "none";
+        document.getElementById("Product003").style.display = "none";
+        document.getElementById("Product004").style.display = "none";
+        document.getElementById("Product005").style.display = "none";
+        document.getElementById("Product006").style.display = "none";
+        document.getElementById("Product007").style.display = "none";
+        document.getElementById("Product008").style.display = "none";
+        document.getElementById("Product009").style.display = "none";
+        document.getElementById("Product010").style.display = "none";
+        document.getElementById("Product011").style.display = "none";
+        document.getElementById("Product012").style.display = "none";
+        document.getElementById("Product013").style.display = "none";
+        document.getElementById("Product014").style.display = "none";
+        document.getElementById("Product015").style.display = "none";
+        document.getElementById("Product016").style.display = "none";
+        document.getElementById("Product017").style.display = "none";
+        document.getElementById("Product018").style.display = "none";
+        document.getElementById("Product019").style.display = "none";
+        document.getElementById("Product020").style.display = "none";
+        document.getElementById("Product021").style.display = "none";
+        document.getElementById("Product022").style.display = "none";
+        document.getElementById("Product023").style.display = "none";
+        document.getElementById("Product024").style.display = "none";
+    }
+
+    function SetAllProductsActive()
+    {
+        document.getElementById("Product001").style.display = "inline-block";
+        document.getElementById("Product002").style.display = "inline-block";
+        document.getElementById("Product003").style.display = "inline-block";
+        document.getElementById("Product004").style.display = "inline-block";
+        document.getElementById("Product005").style.display = "inline-block";
+        document.getElementById("Product006").style.display = "inline-block";
+        document.getElementById("Product007").style.display = "inline-block";
+        document.getElementById("Product008").style.display = "inline-block";
+        document.getElementById("Product009").style.display = "inline-block";
+        document.getElementById("Product010").style.display = "inline-block";
+        document.getElementById("Product011").style.display = "inline-block";
+        document.getElementById("Product012").style.display = "inline-block";
+        document.getElementById("Product013").style.display = "inline-block";
+        document.getElementById("Product014").style.display = "inline-block";
+        document.getElementById("Product015").style.display = "inline-block";
+        document.getElementById("Product016").style.display = "inline-block";
+        document.getElementById("Product017").style.display = "inline-block";
+        document.getElementById("Product018").style.display = "inline-block";
+        document.getElementById("Product019").style.display = "inline-block";
+        document.getElementById("Product020").style.display = "inline-block";
+        document.getElementById("Product021").style.display = "inline-block";
+        document.getElementById("Product022").style.display = "inline-block";
+        document.getElementById("Product023").style.display = "inline-block";
+        document.getElementById("Product024").style.display = "inline-block";
+    }
+
+    function HomeMenu()
+    {
+        SetAllProductsActive()
+    }
+
+    function Sandwiches()
+    {
+        SetAllProductsActive()
+        document.getElementById("Product007").style.display = "none";
+        document.getElementById("Product008").style.display = "none";
+        document.getElementById("Product009").style.display = "none";
+        document.getElementById("Product010").style.display = "none";
+        document.getElementById("Product011").style.display = "none";
+        document.getElementById("Product012").style.display = "none";
+        document.getElementById("Product013").style.display = "none";
+        document.getElementById("Product014").style.display = "none";
+        document.getElementById("Product015").style.display = "none";
+        document.getElementById("Product016").style.display = "none";
+        document.getElementById("Product017").style.display = "none";
+        document.getElementById("Product018").style.display = "none";
+        document.getElementById("Product019").style.display = "none";
+        document.getElementById("Product020").style.display = "none";
+        document.getElementById("Product021").style.display = "none";
+        document.getElementById("Product022").style.display = "none";
+        document.getElementById("Product023").style.display = "none";
+        document.getElementById("Product024").style.display = "none";
+    }
+
+    function Drinks()
+    {
+        SetAllProductsActive()
+        document.getElementById("Product001").style.display = "none";
+        document.getElementById("Product002").style.display = "none";
+        document.getElementById("Product003").style.display = "none";
+        document.getElementById("Product004").style.display = "none";
+        document.getElementById("Product005").style.display = "none";
+        document.getElementById("Product006").style.display = "none";
+        document.getElementById("Product014").style.display = "none";
+        document.getElementById("Product015").style.display = "none";
+        document.getElementById("Product016").style.display = "none";
+        document.getElementById("Product017").style.display = "none";
+        document.getElementById("Product018").style.display = "none";
+        document.getElementById("Product019").style.display = "none";
+        document.getElementById("Product020").style.display = "none";
+        document.getElementById("Product021").style.display = "none";
+        document.getElementById("Product022").style.display = "none";
+        document.getElementById("Product023").style.display = "none";
+        document.getElementById("Product024").style.display = "none";
+    }
+
+    function SidesAndDips()
+    {
+        SetAllProductsActive()
+        document.getElementById("Product001").style.display = "none";
+        document.getElementById("Product002").style.display = "none";
+        document.getElementById("Product003").style.display = "none";
+        document.getElementById("Product004").style.display = "none";
+        document.getElementById("Product005").style.display = "none";
+        document.getElementById("Product006").style.display = "none";
+        document.getElementById("Product007").style.display = "none";
+        document.getElementById("Product008").style.display = "none";
+        document.getElementById("Product009").style.display = "none";
+        document.getElementById("Product010").style.display = "none";
+        document.getElementById("Product011").style.display = "none";
+        document.getElementById("Product012").style.display = "none";
+        document.getElementById("Product013").style.display = "none";
+        document.getElementById("Product020").style.display = "none";
+        document.getElementById("Product021").style.display = "none";
+        document.getElementById("Product022").style.display = "none";
+        document.getElementById("Product023").style.display = "none";
+        document.getElementById("Product024").style.display = "none";
+    }
+
+    function Desserts()
+    {
+        SetAllProductsActive()
+        document.getElementById("Product001").style.display = "none";
+        document.getElementById("Product002").style.display = "none";
+        document.getElementById("Product003").style.display = "none";
+        document.getElementById("Product004").style.display = "none";
+        document.getElementById("Product005").style.display = "none";
+        document.getElementById("Product006").style.display = "none";
+        document.getElementById("Product007").style.display = "none";
+        document.getElementById("Product008").style.display = "none";
+        document.getElementById("Product009").style.display = "none";
+        document.getElementById("Product010").style.display = "none";
+        document.getElementById("Product011").style.display = "none";
+        document.getElementById("Product012").style.display = "none";
+        document.getElementById("Product013").style.display = "none";
+        document.getElementById("Product014").style.display = "none";
+        document.getElementById("Product015").style.display = "none";
+        document.getElementById("Product016").style.display = "none";
+        document.getElementById("Product017").style.display = "none";
+        document.getElementById("Product018").style.display = "none";
+        document.getElementById("Product019").style.display = "none";
+    }
+
+    function AddToBasket(price, productname)
+    {
+        TotalPrice += price
+        document.getElementById("Total").innerHTML = "Total: £" + parseFloat(String(TotalPrice)).toFixed(2);
+
+        AllPrices.push(parseFloat(String(price)).toFixed(2))
+        AllProducts.push(productname)
+    }
+
+    function LoadBasket()
+    {
+        SetAllProductHidden()
+        document.getElementById("Basket").style.display = "block";
+
+        var FilteredPrices = AllPrices.filter(Boolean);
+        var FilteredProducts = AllProducts.filter(Boolean)
+
+        for (let i = 0; i < FilteredPrices.length; i++) {
+            console.log(String(FilteredPrices[i]))
+            console.log(FilteredProducts[i])
+
+            const Product = document.createElement("div");          
+            
+            Product.classList.add("OrderedItem")
+            Product.innerHTML += "<h2>" + FilteredProducts[i] + "</h2>" + "<h3>" + String(FilteredPrices[i]) + "</h3>"
+
+            const Button = document.createElement("button");  
+            Button.innerText = "Remove"
+            Button.onclick = function() { Remove(i); };
+            
+            document.getElementById("OrderedItems").appendChild(Product);
+            document.getElementById("OrderedItems").appendChild(Button);
+        }
+    }
+
+    function CloseBasket()
+    {
+        SetAllProductsActive()
+        document.getElementById("Basket").style.display = "none";
+        document.getElementById("OrderedItems").innerHTML = ''
+    }
+
+    function ReloadBasket()
+    {
+        document.getElementById("OrderedItems").innerHTML = ''
+        LoadBasket()
+    }
+
+    function Remove(index)
+    {  
+        console.log(index)
+        console.log(parent)
+        TotalPrice -= AllPrices[index]
+        document.getElementById("Total").innerHTML = "Total: £" + parseFloat(String(TotalPrice)).toFixed(2);
+
+        delete AllPrices[index]
+        delete AllProducts[index]
+    }
+
+    function HighContrast()
+    {
+        document.body.style.background = "none";
+        document.body.style.background = "black";
+        document.getElementById("Title").style.color = "yellow";
+        document.getElementById("Total").style.color = "yellow";
+        document.getElementById("Basket").style.background = "none";
+        document.getElementById("Basket").style.background = "black";
+        document.getElementById("OrderTitle").style.color = "yellow";
+        document.getElementById("Accessability").style.color = "yellow";
+    }
+
+    function LargeText()
+    {
+        document.body.style.fontSize = "20px";
+    }
+
+    function Sound()
+    {
+        var audio = new Audio('Sound/NotifSound.wav');
+        audio.play();
+    }
+
+    function Reset()
+    {
+        location.reload();
+    }
+</script>
