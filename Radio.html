@@ -1,0 +1,62 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>
+<center>
+  <link rel="shortcut icon" type="image/x-icon" href="Images/Favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Styles/Radio.css">
+
+  <h1>theohaines.xyz | Home</h1>
+  <title>Theo Haines</title>
+
+  <div class="NavBar">
+    <a href="index.html"><button class="Button Button1">home</button></a>
+    <a href="Software-Games.html"><button class="Button Button1">Software</button></a>
+    <a href="Music.html"><button class="Button Button1">Music</button></a>
+    <a href="Contact.html"><button class="Button Button1">contact</button></a>
+    <a href="Blog.html"><button class="Button Button1">Blog</button></a>
+  </div>
+</center>
+</head>
+<body>
+    <br>
+    <br>
+    <center>
+        <h1>The radio</h1>
+        <br>
+        <br>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <br>
+        <p id="demo"></p>
+    </center>
+
+    <script>
+        var audio
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; // Display the default slider value
+    
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() 
+        {
+            audio = null
+            output.innerHTML = this.value + " FM";
+
+            if (slider.value == 3) 
+            {
+                var audio = new Audio('Audio/Heaven Pierce Her - ULTRAKILL- CHAOS-ORDER - 04 Sunshine (Mirage).mp3');
+                audio.play();
+            }
+            else if (slider.value == 3)
+            {
+
+            }
+        }
+    </script>
+</body>
