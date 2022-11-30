@@ -10,53 +10,81 @@
 
   <link rel="stylesheet" href="Styles/Radio.css">
 
-  <h1>theohaines.xyz | Home</h1>
+  <h1>theohaines.xyz | Radio</h1>
   <title>Theo Haines</title>
-
-  <div class="NavBar">
-    <a href="index.html"><button class="Button Button1">home</button></a>
-    <a href="Software-Games.html"><button class="Button Button1">Software</button></a>
-    <a href="Music.html"><button class="Button Button1">Music</button></a>
-    <a href="Contact.html"><button class="Button Button1">contact</button></a>
-    <a href="Blog.html"><button class="Button Button1">Blog</button></a>
-  </div>
 </center>
 </head>
 <body>
     <br>
     <br>
     <center>
-        <h1>The radio</h1>
         <br>
         <br>
         <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <input type="range" min="88" max="108" value="98" class="slider" id="myRange">
         </div>
         <br>
         <p id="demo"></p>
+        <p id="StationName">NO SIGNAL</p>
+        <br>
+        <br>
+        <a href="Contact.html"><button class="Button Button1">Contact Me</button></a>
     </center>
+
+    <audio loop src="Audio/RadioStatic.mp3" id="Static"></audio>
+    <audio loop src="Audio/Stations/ThePainRadio.mp3" id="ThePainRadio"></audio>
+    <audio loop src="Audio/Stations/TheFear.mp3" id="TheFear"></audio>
+    <audio loop src="Audio/the weather voices.mp3" id="Weather"></audio>
 
     <script>
         var audio
         var slider = document.getElementById("myRange");
         var output = document.getElementById("demo");
-        output.innerHTML = slider.value; // Display the default slider value
+        var StationName = document.getElementById("StationName")
+        output.innerHTML = slider.value + " FM";
     
-        // Update the current slider value (each time you drag the slider handle)
+        document.getElementById("myRange").setAttribute("step", "0.1");
         slider.oninput = function() 
         {
             audio = null
             output.innerHTML = this.value + " FM";
 
-            if (slider.value == 3) 
+            if (slider.value == 89.2)
             {
-                var audio = new Audio('Audio/Heaven Pierce Her - ULTRAKILL- CHAOS-ORDER - 04 Sunshine (Mirage).mp3');
-                audio.play();
+                DisableAllSources()
+                document.getElementById("Weather").play();
+                document.getElementById("Weather").muted = false;
+                StationName.innerHTML = "Weather nation";
             }
-            else if (slider.value == 3)
+            else if (slider.value == 93.7) 
             {
+                DisableAllSources()
+                document.getElementById("ThePainRadio").play();
+                document.getElementById("ThePainRadio").muted = false;
+                StationName.innerHTML = "The Pain Radio";
+            }
+            else if (slider.value == 97.7)
+            {
+                DisableAllSources()
+                document.getElementById("TheFear").play();
+                document.getElementById("TheFear").muted = false;
+                StationName.innerHTML = "The Fear";
+            }
+            else
+            {
+                DisableAllSources()
+                document.getElementById("Static").play();
+                document.getElementById("Static").muted = false;
+                StationName.innerHTML = "NO SIGNAL";
+            }
+        }
 
-            }
+        function DisableAllSources()
+        {
+            document.getElementById("Static").muted = true;
+            document.getElementById("Weather").muted = true;
+            document.getElementById("ThePainRadio").muted = true;
+            document.getElementById("TheFear").muted = true;
         }
     </script>
 </body>

@@ -1,12 +1,32 @@
-body
-{
-    background: #CECECE;
-    background-color: #CECECE;
+* { /* reset margins and paddings on all elements */
+	margin:0;
+	padding:0;
+}
+
+body::before {
+		content:""; /* required for ::before */
+		position:fixed; /* don't scroll with page */
+		z-index:-100; /* place behind elements on page */
+		width:100%;
+		height:100%;
+		background-color:#26f8ff;
+		background-image: 
+		radial-gradient(circle farthest-side at top right, transparent, #2bff008f), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #ff008c8f);
+		animation:bg-change 10s infinite;
+}
+
+@keyframes bg-change {
+	0%, 100% {
+		filter:hue-rotate(0deg);
+	}
+	50% {
+		filter:hue-rotate(-45deg);
+	}
 }
 
 h1
 {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-shadow: 2px 2px rgb(6,0,112,);
@@ -14,7 +34,7 @@ h1
 
 h2
 {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-shadow: 2px 2px rgb(6,0,112,);
@@ -22,7 +42,7 @@ h2
 
 h3
 {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-shadow: 2px 2px rgb(6,0,112,);
@@ -38,7 +58,7 @@ h3
 {
     font-family: 'Montserrat', sans-serif;
     align-self: top;
-    background-color: #2e2e2e18;
+    background-color: #ffffff18;
     border: none;
     color: white;
     padding: 31.25% 200%;
@@ -66,7 +86,7 @@ h3
 
 .Button:hover
 {
-    background-color: rgb(112, 112, 112);
+    background-color: rgba(112, 112, 112, 0.116);
 }
 
 .slidecontainer 
@@ -83,7 +103,7 @@ h3
     border-radius: 5px;  
     width: 50%; /* Full-width */
     height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
+    background: #383D3B; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -103,9 +123,8 @@ h3
     appearance: none;
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
+    background: #ca0f0f; /* Green background */
     cursor: pointer; /* Cursor on hover */
-    height: 25px;
     border-radius: 50%; 
 }
   
@@ -117,4 +136,10 @@ h3
     cursor: pointer; /* Cursor on hover */
     height: 25px;
     border-radius: 50%;
+}
+
+p
+{
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
 }
