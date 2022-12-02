@@ -35,6 +35,7 @@
     <audio loop src="Audio/Stations/ThePainRadio.mp3" id="ThePainRadio"></audio>
     <audio loop src="Audio/Stations/TheFear.mp3" id="TheFear"></audio>
     <audio loop src="Audio/the weather voices.mp3" id="Weather"></audio>
+    <audio loop src="Audio/Stations/TheSomersetChannel.mp3" id="TheSomersetChannel"></audio>
 
     <script>
         var audio
@@ -70,6 +71,13 @@
                 document.getElementById("TheFear").muted = false;
                 StationName.innerHTML = "The Fear";
             }
+            else if (slider.value == 107.7)
+            {
+                DisableAllSources()
+                document.getElementById("TheSomersetChannel").play();
+                document.getElementById("TheSomersetChannel").muted = false;
+                StationName.innerHTML = "The Somerset channel";
+            }
             else
             {
                 DisableAllSources()
@@ -84,6 +92,7 @@
             document.getElementById("Static").muted = true;
             document.getElementById("Weather").muted = true;
             document.getElementById("ThePainRadio").muted = true;
+            document.getElementById("TheSomersetChannel").muted = true;
             document.getElementById("TheFear").muted = true;
         }
     </script>
