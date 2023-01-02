@@ -1,0 +1,191 @@
+body
+{
+    background: #CECECE;
+    background-color: #CECECE;
+}
+
+h1
+{
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+}
+
+h2
+{
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+}
+
+h3
+{
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+}
+
+.NavBar
+{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button
+{
+    font-family: 'Montserrat', sans-serif;
+    align-self: top;
+    background-color: #2e2e2e18;
+    border: none;
+    color: white;
+    padding: 31.25% 200%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+  
+.Button1
+{
+    background: #01034413;
+	color: rgb(0, 0, 0);
+	padding: 1% 1%;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+.Button:hover
+{
+    background-color: rgb(112, 112, 112);
+}
+
+.Inline{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e2e2e00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.Zoom
+{
+    transition: transform .2s;
+}
+
+.Zoom:hover 
+{
+    transform: scale(1.5);
+}
+
+.MyPlaylists
+{
+    padding-left: 2%;
+    color: black;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+  /* Set a specific color for each brand */
+  
+  /* Twitter */
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .button
+    {
+    font-family: 'Montserrat', sans-serif;
+    align-self: top;
+    background-color: #2e2e2e18;
+    border: none;
+    color: white;
+    padding: 31.25% 200%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    }
+  
+    .Button1
+    {
+    background: #01034413;
+	color: rgb(0, 0, 0);
+	padding: 1% 1%;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 20px;
+	border-radius: 5px;
+    }
+
+    .Button:hover
+    {
+    background-color: rgb(112, 112, 112);
+    }
+    .Inline{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #2e2e2e00;
+        border: none;
+        color: black;
+        padding: 15px 0px;
+        text-align: center;
+        display: inline-block;
+    }
+    .Zoom
+    {
+    transition: transform .2s;
+    }
+
+    .Zoom:hover 
+    {
+    transform: scale(1.2);
+    }
+    .Title
+    {
+    color:rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(6,0,112,);
+    width:max-content;
+    }
+
+    .Reccomended
+    {
+        display: none;
+    }
+}

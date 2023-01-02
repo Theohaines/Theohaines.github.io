@@ -18,30 +18,9 @@ body
     font-family: monospace;
 }
 
-h2
+.LogContent
 {
     font-family: monospace;
     color: wheat;
+    padding-right: 50%;
 }
-
-.LatestLog button
-{
-    border: none;
-    background-color: rgba(255, 0, 0, 0);
-    color: wheat;
-    cursor:pointer;
-    font-family: monospace;
-}
-
-.LatestLog a:after
-{
-    content: "";
-    display: block;
-    height: 0;
-    width: 1px;
-}
-
-
-
-
-  
