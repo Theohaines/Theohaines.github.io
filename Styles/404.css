@@ -18,18 +18,8 @@ body
     font-family: monospace;
 }
 
-.LogContent
+.h2
 {
     font-family: monospace;
     color: wheat;
-    padding-right: 50%;
-}
-
-.LogContent button
-{
-    border: none;
-    background-color: rgba(255, 0, 0, 0);
-    color: wheat;
-    cursor:pointer;
-    font-family: monospace;
 }
