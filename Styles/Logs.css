@@ -34,3 +34,9 @@ body
     height: 0;
     width: 1px;
 }
+
+h2
+{
+    font-family: monospace;
+    color: wheat;
+}
