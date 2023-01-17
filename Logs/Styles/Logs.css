@@ -52,3 +52,9 @@ img
     text-align: center;
     display: inline-block;
 }
+
+h2
+{
+    font-family: monospace;
+    color: wheat;
+}
