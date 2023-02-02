@@ -1,15 +1,254 @@
 <!DOCTYPE html>
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="Styles/Index.css">
-    <h1 class="Title">Theo Haines</h1>
+    <title>Home 95</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/Required.css">
 </head>
 <body>
-    <div class="NavBar">
-        <a href="index.html"><button>Home</button></a>
-        <a href="Software.html"><button>Software</button></a>
-        <a href="Music.html"><button>Music</button></a>
-        <a href="Contact.html"><button>Contact</button></a>
-        <a href="Logs.html"><button>Logs</button></a>
+
+    <div class="SoftwareWindow" id="SoftwareWindow">
+        <div class="TextBanner">
+            <p>Software</p>
+            <button onclick="CloseSoftware()">X</button>
+        </div>
+        <h3>FREE GAMES</h3>
+        <div class="InlineContent">
+            <a href="https://theohaines.itch.io/2d-puzzle-platformer"><button>2D Puzzle Platformer</button></a>
+            <a href="https://theohaines.itch.io/2d-platformer"><button>2D Shooter Platformer</button></a>
+            <a href="https://theohaines.itch.io/balls"><button>Balls</button></a>
+        </div>
+        <h3>COOL SOFTWARE</h3>
+        <div class="InlineContent">
+            <a href="https://theohaines.itch.io/vestamessages"><button>Vesta Messages</button></a>
+            <a href=""><button>[REDACTED]</button></a>
+        </div>
+        <h3>TWELVE MONTHS OF SOFTWARE</h3>
+        <div class="InlineContent">
+            <a href="https://github.com/Theohaines/TwelveMonthsOfApps/tree/main/TheTower"><button>The Tower</button></a>
+        </div>
     </div>
+
+    <div class="MusicWindow" id="MusicWindow">
+        <div class="TextBanner">
+            <p>Limewire</p>
+            <button onclick="CloseMusic()">X</button>
+        </div>
+        <h3>YOUR PLAYLISTS</h3>
+        <div class="InlineContent">
+            <button onclick="window.location.href='https://open.spotify.com/playlist/0ShOgNfWonGLs9MKKcgiWP?si=e9c8eead19714419';">Good Music</button>
+            <button onclick="window.location.href='https://open.spotify.com/playlist/39lN3K1s3AGz3GkNCzK0mq?si=076cd1baae534449';">Songs about love</button>
+            <button onclick="window.location.href='https://open.spotify.com/playlist/6YTgLnOnGG7CMJHlSo2NxG?si=8971cf7fdb80441d';">Sometimes we cry</button>
+            <button onclick="window.location.href='https://open.spotify.com/playlist/40UTypikeuBdJnRExwa6Q3?si=52221198b2724166';">The montage</button>
+            <button onclick="window.location.href='https://open.spotify.com/playlist/2y4qRisj0uRjKYZ9lGwzMf?si=251d134b30134997';">Morning person</button>
+        </div>
+        <h3>RECCOMENDED</h3>
+        <div class="InlineContent">
+            <button onclick="window.location.href='https://open.spotify.com/album/2TgXc0KeZDRjb9AsnSED7M?si=EgN8cmlHQiqf9T9ccG9s2g';">Get F*****d</button>
+            <button onclick="window.location.href='https://open.spotify.com/album/2hvCFY4DYaKzzkNYd60oS3?si=qbqbJ-uZTdapIKZ_L39lxw';">The evolution of tears</button>
+            <button onclick="window.location.href='https://open.spotify.com/album/1A5BznYyitFMW4erknouZl?si=QdJDPBUISNCrtZPikdnWtg';">The circle in the square</button>
+            <button onclick="window.location.href='https://open.spotify.com/album/0MHGKVzf6jX0hJ1gfgDwF7?si=Gg7fOp5STKi7S_XxbrusTg';">High risk behaviour</button>
+            <button onclick="window.location.href='https://open.spotify.com/playlist/37i9dQZF1DZ06evO1EG9Z6?si=8a7f831bb8f247f4';">This is royal blood</button>
+            <button onclick="window.location.href='https://open.spotify.com/album/70kaIuCoHOZ11adVwGQroA?si=0B7OvPpVQm-W-jApJUSXTQ';">Sunset overdrive</button>
+            <button onclick="window.location.href='https://open.spotify.com/album/2RdOzNntKQLgfg9QCWkp4C?si=f5dcaf182ef94fc2';">Hey!</button>
+            <button onclick="window.location.href='https://open.spotify.com/playlist/37i9dQZF1DZ06evO1gjphT?si=af89447998ac443c';">This is Gezebelle Gaburgably</button>
+        </div>
+        <h3>PROFILE INFO</h3>
+        <button onclick="window.location.href='https://open.spotify.com/user/m855hhw8mad42pc4ve8dqo8i3?si=dc8192663fe54424';">Spotify</button>
+        <button onclick="window.location.href='https://www.last.fm/user/theohaines';">Last FM</button>
+    </div>
+
+    <div class="ContactWindow" id="ContactWindow">
+        <div class="TextBanner">
+            <p>Contact</p>
+            <button onclick="CloseContact()">X</button>
+        </div>
+        <h3>USER: THEO HAINES</h3>
+        <div class="InlineContent">
+            <button onclick="window.location.href='https://twitter.com/TheoHainesAgain';">Twitter</button>
+            <button onclick="window.location.href='https://www.linkedin.com/in/theo-haines-803a45241/';">LinkedIn</button>
+        </div>
+        <div class="InlineContent">
+            <button onclick="window.location.href='mailto:contact@theohaines.xyz';">Email</button>
+            <button onclick="window.location.href='https://my.indeed.com/p/theoh-kkr06vv';">Indeed</button>
+        </div>
+    </div>
+
+    <div class="FileExplorerWindow" id="FileExplorerWindow">
+        <div class="TextBanner">
+            <p>File Explorer</p>
+            <button onclick="CloseFileExplorer()">X</button>
+        </div>
+        <div class="InlineContent">
+            <button onclick="OpenDocOne()">Doc1 | 01/01/1998 | DOCX | 3kb</button>
+            <button onclick="OpenWelcomeScan()">Welcome_Scan | 01/01/1997 | PNG | 504kb</button>
+        </div>
+    </div>
+
+    <div class="DocOne" id="DocOne">
+        <div class="TextBanner">
+            <p>Doc1.DOCX</p>
+            <button onclick="CloseDocOne()">X</button>
+        </div>
+        <h1>⠀⠀⠀⠀⠀⢀⣤⠖⠒⠒⠒⢒⡒⠒⠒⠒⠒⠒⠲⠦⠤⢤⣤⣄⣀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⣠⠟⠀⢀⠠⣐⢭⡐⠂⠬⠭⡁⠐⠒⠀⠀⣀⣒⣒⠐⠈⠙⢦⣄⠀⠀
+            ⠀⠀⠀⣰⠏⠀⠐⠡⠪⠂⣁⣀⣀⣀⡀⠰⠀⠀⠀⢨⠂⠀⠀⠈⢢⠀⠀⢹⠀⠀
+            ⠀⣠⣾⠿⠤⣤⡀⠤⡢⡾⠿⠿⠿⣬⣉⣷⠀⠀⢀⣨⣶⣾⡿⠿⠆⠤⠤⠌⡳⣄
+            ⣰⢫⢁⡾⠋⢹⡙⠓⠦⠤⠴⠛⠀⠀⠈⠁⠀⠀⠀⢹⡀⠀⢠⣄⣤⢶⠲⠍⡎⣾
+            ⢿⠸⠸⡇⠶⢿⡙⠳⢦⣄⣀⠐⠒⠚⣞⢛⣀⡀⠀⠀⢹⣶⢄⡀⠀⣸⡄⠠⣃⣿
+            ⠈⢷⣕⠋⠀⠘⢿⡶⣤⣧⡉⠙⠓⣶⠿⣬⣀⣀⣐⡶⠋⣀⣀⣬⢾⢻⣿⠀⣼⠃
+            ⠀⠀⠙⣦⠀⠀⠈⠳⣄⡟⠛⠿⣶⣯⣤⣀⣀⣏⣉⣙⣏⣉⣸⣧⣼⣾⣿⠀⡇⠀
+            ⠀⠀⠀⠘⢧⡀⠀⠀⠈⠳⣄⡀⣸⠃⠉⠙⢻⠻⠿⢿⡿⢿⡿⢿⢿⣿⡟⠀⣧⠀
+            ⠀⠀⠀⠀⠀⠙⢦⣐⠤⣒⠄⣉⠓⠶⠤⣤⣼⣀⣀⣼⣀⣼⣥⠿⠾⠛⠁⠀⢿⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠈⠙⠦⣭⣐⠉⠴⢂⡤⠀⠐⠀⠒⠒⢀⡀⠀⠄⠁⡠⠀⢸⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢤⣀⣀⠉⠁⠀⠀⠀⠒⠒⠒⠉⠀⢀⡾⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠲⠦⠤⠤⠤⠤⠴⠞⠋⠀⠀</h1>
+    </div>
+
+    <div class="WelcomeScan" id="WelcomeScan">
+        <div class="TextBanner">
+            <p>Welcome_Scan.PNG</p>
+            <button onclick="CloseWelcomeScan()">X</button>
+        </div>
+        <img src="Images/Photography/Welcome_Scan.jpg" alt="DATA MISSING">
+    </div>
+    
+    <div class="Desktop">
+        <button onclick="window.location.href='https://helpdylan.co.uk';">
+            <div class="DesktopIcon">
+                <img src="Images/Icons/Recycle_Bin.ico" alt="RecycleBinEmpty">
+                <p>Recycle Bin</p>
+            </div>
+        </button>
+
+        <button onclick="OpenSoftware()">
+            <div class="DesktopIcon">
+                <img src="Images/Icons/Programs.ico" alt="Software">
+                <p>Software</p>
+            </div>
+        </button>
+
+        <button onclick="OpenMusic()">
+            <div class="DesktopIcon">
+                <img src="Images/Icons/MusicDisc.ico" alt="Music">
+                <p>Music</p>
+            </div>
+        </button>
+
+        <button onclick="OpenContact()">
+            <div class="DesktopIcon">
+                <img src="Images/Icons/Chat.ico" alt="contact">
+                <p>Contact</p>
+            </div>
+        </button>
+
+        <button onclick="OpenFileExplorer()">
+            <div class="DesktopIcon">
+                <img src="Images/Icons/Folder.ico" alt="contact">
+                <p>Misc</p>
+            </div>
+        </button>
+    </div>
+
+    <div class="TaskBar">
+        <button class="Start">Start</button>
+        <div class="StartMenu">
+            <a href="index.html"><button>Reset (Home)</button></a>
+            <a href="https://drive.google.com/drive/folders/19pCHt9ypllbFO6diJgujlJ6egRJeW_YB?usp=share_link"><button>Photos</button></a>
+            <a href="https://my.indeed.com/p/theoh-kkr06vv"><button>Job Findr</button></a>
+            <a href="https://Google.com"><button>Search >></button></a>
+        </div>
+        <button class="TaskBarButton" id="SoftwareTaskbar" onclick="OpenSoftware()" style="display: none;">Software</button>
+        <button class="TaskBarButton" id="MusicTaskbar" onclick="OpenMusic()" style="display: none;">Music</button>
+        <button class="TaskBarButton" id="ContactsTaskbar" onclick="OpenContact()" style="display: none;">Contacts</button>
+        <button class="TaskBarButton" id="FileExplorerTaskbar" onclick="OpenFileExplorer()" style="display: none;">File Explorer</button>
+        <button class="TaskBarButton" id="DocOneTaskbar" onclick="OpenDocOne()" style="display: none;">Doc1</button>
+        <button class="TaskBarButton" id="Welcome_ScanTaskbar" onclick="OpenWelcomeScan()" style="display: none;">Welcome_Scan</button>
 </body>
+
+<script>
+    var SoftwareWindow = document.getElementById("SoftwareWindow")
+    var MusicWindow = document.getElementById("MusicWindow")
+    var ContactWindow = document.getElementById("ContactWindow")
+    var FileExplorerWindow = document.getElementById("FileExplorerWindow")
+    var DocOne = document.getElementById("DocOne")
+    var WelcomeScan = document.getElementById("WelcomeScan")
+
+    var SoftwareWindowTaskbar = document.getElementById("SoftwareTaskbar")
+    var MusicWindowTaskbar = document.getElementById("MusicTaskbar")
+    var ContactWindowTaskbar = document.getElementById("ContactsTaskbar")
+    var FileExplorerWindowTaskbar = document.getElementById("FileExplorerTaskbar")
+    var DocOneTaskbar = document.getElementById("DocOneTaskbar")
+    var WelcomeScanTaskbar = document.getElementById("Welcome_ScanTaskbar")
+
+    function OpenSoftware()
+    {
+        SoftwareWindow.style.display = "block";
+        SoftwareWindowTaskbar.style.display = "inline-block";
+    }
+
+    function CloseSoftware()
+    {
+        SoftwareWindow.style.display = "none";
+        SoftwareWindowTaskbar.style.display = "none";
+    }
+
+    function OpenMusic()
+    {
+        MusicWindow.style.display = "block";
+        MusicWindowTaskbar.style.display = "inline-block";
+    }
+
+    function CloseMusic()
+    {
+        MusicWindow.style.display = "none";
+        MusicWindowTaskbar.style.display = "none";
+    }
+
+    function OpenContact()
+    {
+        ContactWindow.style.display = "block";
+        ContactWindowTaskbar.style.display = "inline-block";
+    }
+
+    function CloseContact()
+    {
+        ContactWindow.style.display = "none";
+        ContactWindowTaskbar.style.display = "none";
+    }
+
+    function OpenFileExplorer()
+    {
+        FileExplorerWindow.style.display = "block";
+        FileExplorerWindowTaskbar.style.display = "inline-block";
+    }
+
+    function CloseFileExplorer()
+    {
+        FileExplorerWindow.style.display = "none";
+        FileExplorerWindowTaskbar.style.display = "none";
+    }
+
+    function OpenDocOne()
+    {
+        DocOne.style.display = "block";
+        DocOneTaskbar.style.display = "inline-block";
+    }
+
+    function CloseDocOne()
+    {
+        DocOne.style.display = "none";
+        DocOneTaskbar.style.display = "none";
+    }
+
+    function OpenWelcomeScan()
+    {
+        WelcomeScan.style.display = "block";
+        WelcomeScanTaskbar.style.display = "inline-block";
+    }
+
+    function CloseWelcomeScan()
+    {
+        WelcomeScan.style.display = "none";
+        WelcomeScanTaskbar.style.display = "none";
+    }
+</script>
