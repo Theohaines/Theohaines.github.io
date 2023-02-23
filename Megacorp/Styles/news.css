@@ -1,0 +1,42 @@
+body{
+    background-color: aliceblue;
+}
+
+h1{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.NavBar{
+    width: 90%;
+    height: 75px;
+    margin: auto;
+    margin-top: 20px;
+    left: 50%;
+    right: 50%;
+    background-color: #13293D;
+}
+
+.NavBar h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    display: inline;
+    color: white;
+    margin-left: 10px;
+}
+
+.NavBar button{
+    font-family: 'Nanum Gothic', sans-serif;
+    display: inline;
+    height: 100%;
+    margin-left: 10px;
+    background-color: #00000000;
+    border: none;
+    color: white;
+}
+
+.NavBar button:hover{
+    color: #247BA0;
+}
+
+.NavBar button:active{
+    color: #006494;
+}

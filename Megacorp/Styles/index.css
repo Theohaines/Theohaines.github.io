@@ -44,6 +44,7 @@ h1{
 .CallToActionOne{
     width: 90%;
     height: 100%;
+    display: inline;
 }
 
 .CallToActionOneImage {
@@ -52,6 +53,11 @@ h1{
     bottom: 0;
     width: 49%;
     left: 10%;
+}
+
+.CallToActionOneImage img{
+    height: 60%;
+    width: 60%;
 }
 
 .CallToActionOneQuote {
@@ -63,24 +69,5 @@ h1{
     bottom: 0%;
     margin:auto;
     position: absolute;
-}
-
-.CallToActionOneQuote button{
-    font-family: 'Nanum Gothic', sans-serif;
-    text-align: center;
-    position: absolute;
-    left: 17%;
-    background-color: #1B98E0;
-    width: 25%;
-    height: 8%;
-    border-radius: 5%;
-}
-
-.CallToActionOneQuote button:hover{
-    background-color: #247BA0;
-}
-
-.CallToActionOneQuote button:active{
-    background-color: #006494;
 }
 
