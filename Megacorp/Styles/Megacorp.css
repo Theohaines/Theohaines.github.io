@@ -17,12 +17,14 @@ h1{
 }
 
 .NavBar h1{
+    font-family: 'Nanum Gothic', sans-serif;
     display: inline;
     color: white;
     margin-left: 10px;
 }
 
 .NavBar button{
+    font-family: 'Nanum Gothic', sans-serif;
     display: inline;
     height: 100%;
     margin-left: 10px;
@@ -53,6 +55,7 @@ h1{
 }
 
 .CallToActionOneQuote {
+    font-family: 'Nanum Gothic', sans-serif;
     height: 49%;
     width: 49%;
     display: inline-block;
@@ -60,5 +63,24 @@ h1{
     bottom: 0%;
     margin:auto;
     position: absolute;
+}
+
+.CallToActionOneQuote button{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 17%;
+    background-color: #1B98E0;
+    width: 25%;
+    height: 8%;
+    border-radius: 5%;
+}
+
+.CallToActionOneQuote button:hover{
+    background-color: #247BA0;
+}
+
+.CallToActionOneQuote button:active{
+    background-color: #006494;
 }
 
