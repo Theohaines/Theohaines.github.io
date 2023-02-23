@@ -38,3 +38,27 @@ h1{
 .NavBar button:active{
     color: #006494;
 }
+
+.CallToActionOne{
+    width: 90%;
+    height: 100%;
+}
+
+.CallToActionOneImage {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 49%;
+    left: 10%;
+}
+
+.CallToActionOneQuote {
+    height: 49%;
+    width: 49%;
+    display: inline-block;
+    right: 0%;
+    bottom: 0%;
+    margin:auto;
+    position: absolute;
+}
+
