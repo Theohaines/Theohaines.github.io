@@ -1,0 +1,103 @@
+body{
+    background-color: white;
+    background-image: url("../Images/PizzaWallpaper.jpg");
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.Header{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5px;
+    background-color: coral;
+}
+
+.Header h1{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-align: center;
+}
+
+.Navbar{
+    margin: auto;
+    width: fit-content;
+}
+
+.ButtonSmall{
+    display: inline;
+    border: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0.073);
+    color: white;
+}
+
+.ButtonSmall:hover{
+    background-color: rgb(83, 83, 255);
+    transition-duration: 0.5s;
+}
+
+.ButtonSmall:active{
+    background-color: lightblue;
+}
+
+.ButtonMedium{
+    display: inline;
+    border: none;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0.073);
+    color: white;
+}
+
+.ButtonMedium:hover{
+    background-color: rgb(83, 83, 255);
+    transition-duration: 0.5s;
+}
+
+.ButtonMedium:active{
+    background-color: lightblue;
+}
+
+.BodyContainer{
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+
+    background-color: coral;
+    text-align: center;
+}
+
+.ReviewBox{
+    width: 80%;
+    margin: auto;
+    padding: 2px;
+    margin-bottom: 10px;
+
+    background-color: rgb(235, 170, 147);
+}
+
+.PizzaMaker{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+
+.ImageContainer{
+    margin: auto;
+    margin: 5px;
+    display: inline;
+}
+
+.ImageContainer img{
+    width: 30%;
+    height: 30%;
+}
+
+.ImageContainer h3{
+    text-align: center;
+    display: inline-block;
+}

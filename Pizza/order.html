@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+
+        <title>Yeovil Pizza Co | Home</title>
+        <div class="Header">
+            <h1>Yeovil Pizza Co</h1>
+            <div class="Navbar">
+                <button class="ButtonSmall">Home</button>
+                <button class="ButtonSmall" onclick="window.location.href='about.html';">About</button>
+                <button class="ButtonSmall" onclick="window.location.href='order.html';" style="background-color: rgba(0, 0, 255, 0.303);">Order</button>
+                <button class="ButtonSmall" onclick="window.location.href='gallery.html';">Gallery</button>
+            </div>
+        </div>
+    </head>
+    <body>
+        <div class="BodyContainer">
+            <h1>The pizza maker 5000.37</h1>
+            <h3>"Our pizza is not PizzASS"</h3>
+            <div class="PizzaMaker">  
+                <h3>'Meat'</h3>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Pepperoni</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Ham</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Chicken</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Turkey</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Sausage</label>
+                </div>
+                <h3>Not meat</h3>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Pineapple</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">'Edible' mushrooms</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">New Mexico chile</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Italian tomatoes</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Sliced olives</label>
+                </div>
+                <h3>Cheese</h3>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Mozzarella (obviously)</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Cheddar</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Wensleydale</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Parmesan</label>
+                </div>
+                <h3>Sauce</h3>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Marinara</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Nutella</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Something not vegan (note to self: remove later)</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Cheese (AGAIN?)</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Unbelievably good cheese ( ͡° ͜ʖ ͡°)</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Mozzarella (AGAIN AGAIN?)</label>
+                </div>
+                <h3>Stuffed crust?</h3>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Mozzarella</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Tomato? (I think it is anyway)</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Leftover grease from the grease trap</label>
+                </div>
+                <div class="PizzaOption">
+                    <input type="checkbox" value="fancy" onclick="GetCost()">
+                    <label for="">Dubious liquid</label>
+                </div>
+            </div>
+            <h2 id="Cost">Total cost: 0 Dabloons</h2>
+            <button class="ButtonMedium" onclick="Purchase()">PURCHASE NOW</button>
+        </div>
+    </body>
+
+    <script>
+        var Total = 1
+        function GetCost(){ // I was too lazy / tired (Its 1:32AM mar 30th) to give everything an actual cost so imma just deploy so stratergic manuvers 
+            var Cost = document.getElementById("Cost")
+
+            min = Math.ceil(-5);
+            max = Math.floor(10);
+            Total += Math.floor(Math.random() * (max - min) + min);
+
+            Cost.innerText = "Total cost: " + String(Total) + " Dabloons"
+
+            var audio = new Audio('Sounds/Munch.mp3');
+            audio.play(); 
+        }
+
+        function Purchase(){ //Steal the users debit / credit card details
+            var audio = new Audio('Sounds/Kaching.mp3');
+            audio.play(); 
+        }
+    </script>
+</html>

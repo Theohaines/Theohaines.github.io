@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <audio id="myAudio">
+        <source id="MunchSFX" src="Sounds/Munch.mp3" type="audio/mpeg">
+    </audio>
+    <head>
+        <link rel="stylesheet" href="Styles/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+        <script src="Scripts/Click.js"></script>
+
+        <title>Yeovil Pizza Co | Home</title>
+        <div class="Header">
+            <h1>Yeovil Pizza Co</h1>
+            <div class="Navbar">
+                <button class="ButtonSmall" style="background-color: rgba(0, 0, 255, 0.303);" onclick="window.location.href='index.html'; Click()">Home</button>
+                <button class="ButtonSmall" onclick="window.location.href='about.html'; Click()">About</button>
+                <button class="ButtonSmall" onclick="window.location.href='order.html'; Click()">Order</button>
+                <button class="ButtonSmall" onclick="window.location.href='gallery.html'; Click()">Gallery</button>
+            </div>
+        </div>
+    </head>
+    <body>
+        <div class="BodyContainer">
+            <h1>Build <em>your</em> pizza the way <em>you</em> want</h1>
+            <h2>With the 'freshest' toppings and slightly above avarage delivery we are the most adaquate choice for any occasion!</h2>
+            <button class="ButtonMedium" onclick="window.location.href='order.html'; Click()">Order now!</button>
+        </div>
+
+        <div class="BodyContainer">
+            <h1>About us</h1>
+            <h3>Look at you trying to act interested in my personal life so you can get free pizza. You're just like my ex!</h3>
+            <h3>Oh? you're actually interested? Well why didn't you say so?</h3>
+            <button class="ButtonMedium" onclick="window.location.href='about.html'; Click()">About us</button>
+        </div>
+
+        <div class="BodyContainer">
+            <h1>Gallery</h1>
+            <h3>Look at some pretty <em>hot</em> pictures if you dare ;)</h3>
+            <button class="ButtonMedium" onclick="window.location.href='gallery.html'; Click()">Hot pics folder</button>
+        </div>
+
+        <div class="BodyContainer">
+            <h1>Contact us</h1>
+            <h3>We get it, you need all the details. Well dont worry we've got you covered, no matter what time our highly 'professional' staff are 'eager' to answer all your questions!</h3>
+            <button class="ButtonMedium" onclick="window.location.href='mailto:Contact@theohaines.xyz'; Click()">Contact us!</button>
+        </div>
+
+        <div class="BodyContainer">
+            <h1>Joke of the now</h1>
+            <h3>Wood fired pizza? Well hows pizza gonna get a job now?</h3>
+            <input type="checkbox" onclick="LaughTrack()">
+            <label for="">I found this joke very funny</label>
+            <input type="checkbox" onclick="Boo()">
+            <label for="">I didn't find this joke very funny do better next time</label>
+        </div>
+    </body>
+
+    <script>
+        function LaughTrack(){
+            var audio = new Audio('Sounds/LaughTrack.wav');
+            audio.play(); 
+        }
+
+        function Boo(){
+            var audio = new Audio('Sounds/Boo.mp3');
+            audio.play(); 
+        }
+    </script>
+</html>
