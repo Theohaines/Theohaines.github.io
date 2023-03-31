@@ -71,3 +71,31 @@ h1{
     position: absolute;
 }
 
+.BlueBodyContainer{
+    background-color: #13293D;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.AboutMe{
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #a3b8cb;
+    left: 50%;
+    right: 50%;
+}
+
+.AboutMe p{
+    text-align: center;
+    margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 80%;
+}
+
