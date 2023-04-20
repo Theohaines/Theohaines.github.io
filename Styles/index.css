@@ -81,7 +81,7 @@ h1{
     text-align: center;
 }
 
-.AboutMe{
+.GreyBodyContainer{
     width: 90%;
     height: fit-content;
     padding: 10px;
@@ -92,10 +92,24 @@ h1{
     right: 50%;
 }
 
-.AboutMe p{
+.GreyBodyContainer p{
     text-align: center;
     margin: auto;
     font-family: 'Nanum Gothic', sans-serif;
     width: 80%;
 }
 
+.NewsArticle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px; 
+    background-color: gainsboro;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.NewsArticle p{
+    text-align: center;
+    margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 80%;
+}
