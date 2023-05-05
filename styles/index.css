@@ -1,0 +1,140 @@
+body{
+    background-color: #efefef;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.CTA{
+    width: 95%;
+    height: 70%;
+    margin: auto;
+}
+
+.CTA h1{
+    text-align: center;
+    font-size: 500%;
+}
+
+.CTA h2{
+    text-align: center;
+    font-size: 200%;
+}
+
+.ImageContainer{
+    text-align: center;
+}
+
+.ImageContainer img{
+    width: 30%;
+    margin: 1px;
+}
+
+.AboutMe{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #8D86C9;
+}
+
+.AboutMe h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+.AboutMe h2{
+    text-align: center;
+}
+
+.MyPortfolio{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #8D86C9;
+}
+
+.MyPortfolio h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+.ProjectContainer{
+    text-align: center;
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+    background-color: #725AC1;
+    margin-top: 10px;
+}
+
+.ProjectContainer h2{
+    text-align: center;
+    font-size: 200%;
+}
+
+.ProjectContainer h3{
+    display: inline-block;
+    vertical-align: top;
+    overflow-wrap: break-word;
+}
+
+.ProjectContainer img{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    margin-left: 10px;
+    display: inline;
+}
+
+.ContactMe{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #8D86C9;
+}
+
+.ContactMe h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+.ContactMe h2{
+    text-align: center;
+}
+
+.SocialLinks{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.SocialLinks button{
+    width: 15%;
+    height: 30px;
+    border: none;
+    background-color: #725AC1;
+    font-size: large;
+    color: white;
+    text-align: center;
+    margin: auto;
+}   
+
+.SocialLinks button:hover{
+    transition-duration: 0.3s;
+        background-color: #5c33e4;
+}
+
+.SocialLinks button:active{
+    background-color: #96031A;
+}
+
+.Footer{
+    margin: auto;
+    margin-top: auto;
+    margin-top: 10px;
+    width: 80%;
+
+    background-color: #96031A;
+    padding: 10px;
+}
