@@ -1,0 +1,11 @@
+.CTA h1{
+    font-size: 1300%;
+    line-height: 200px;
+    display: inline;
+}
+
+.CTA h6{
+    font-size: 100%;
+    display: inline;
+    vertical-align: text-top;
+}

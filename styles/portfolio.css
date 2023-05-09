@@ -1,0 +1,27 @@
+.Portfolio h1{
+    font-size: 1300%;
+    text-align: center;
+}
+
+.PortfolioRow{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    margin-bottom: 25px;
+}
+
+.PortfolioRow img{
+    width: 100%;
+    display: inline;
+}
+
+.PortfolioRow h1{
+    display: inline;
+    text-align: center;
+}
+
+.PortfolioRow h2{
+    display: inline;
+    text-align: center;
+}

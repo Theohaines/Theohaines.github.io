@@ -1,0 +1,27 @@
+.Projects h1{
+    font-size: 1300%;
+    text-align: center;
+}
+
+.ProjectsRow{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    margin-bottom: 25px;
+}
+
+.ProjectsRow img{
+    width: 100%;
+    display: inline;
+}
+
+.ProjectsRow h1{
+    display: inline;
+    text-align: center;
+}
+
+.ProjectsRow h2{
+    display: inline;
+    text-align: center;
+}
