@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>CPW-Cashup-Tool</title>
+</head>
+<body>
+    <div>
+        <img style="width: 250px; margin-left: 5px;" src="images/Carphone_Warehouse_logo.svg.png" alt="">
+    </div>
+
+    <div class="CurrencyTable">
+        <h3>CPW-Cashup-Tool</h3>
+        <div class="ContentRow">
+            <label for="£50">£50</label>
+            <input id="£50" name="£50" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£20">£20</label>
+            <input id="£20" name="£20" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£10">£10</label>
+            <input id="£10" name="£10" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£5">£5</label>
+            <input id="£5" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£2">£2</label>
+            <input id="£2" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£1">£1</label>
+            <input id="£1" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£0.50">£0.50</label>
+            <input id="£0.50" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£0.20">£0.20</label>
+            <input id="£0.20" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£0.10">£0.10</label>
+            <input id="£0.10" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£0.05">£0.05</label>
+            <input id="£0.05" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£0.02">£0.02</label>
+            <input id="£0.02" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <div class="ContentRow">
+            <label for="£0.01">£0.01</label>
+            <input id="£0.01" name="£5" type="number" placeholder="Enter amount...">
+        </div>
+        <button onclick="Calculate()">Calculate</button>
+        <button onclick="Reset()">Reset</button>
+    </div>
+
+    <div class="CurrencyTable">
+        <h3>Maths Stuff</h3>
+        <div class="ContentRow">
+            <label for="£50">£50</label>
+            <h5 id="FiftyTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£20">£20</label>
+            <h5 id="TwentyTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£10">£10</label>
+            <h5 id="TennerTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£5">£5</label>
+            <h5 id="FiverTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£2">£2</label>
+            <h5 id="TwoPoundTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£1">£1</label>
+            <h5 id="OnePoundTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£0.50">£0.50</label>
+            <h5 id="FiftyPenceTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£0.20">£0.20</label>
+            <h5 id="TwentyPenceTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£0.10">£0.10</label>
+            <h5 id="TenPenceTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£0.05">£0.05</label>
+            <h5 id="FivePenceTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£0.02">£0.02</label>
+            <h5 id="TwoPenceTotal">Total:</h5>
+        </div>
+        <div class="ContentRow">
+            <label for="£0.01">£0.01</label>
+            <h5 id="OnePenceTotal">Total:</h5>
+        </div>
+        <h3 id="OverallTotal">Overall Total: </h3>
+    </div>
+
+    <h4>Made with ♥ by <a href="https://theohaines.xyz">Theo Haines</a></h4>
+</body>
+    <script src="scripts/index.js"></script>
+</html>

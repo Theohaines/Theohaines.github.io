@@ -1,0 +1,75 @@
+body{
+    overflow-x: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0b2850;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.CurrencyTable{
+    border: 3px solid #7ad3d0;
+    padding: 5px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.CurrencyTable button{
+    width: 100%;
+    height: 40px;
+
+    background-color: #0b2850;
+    border: #7ad3d0 solid 1px;
+    color: white;
+}
+
+.CurrencyTable button:hover{
+    background-color: #113a74;
+}
+
+.CurrencyTable button:active{
+    background-color: #214e8d;
+}
+
+.ContentRow button{
+    margin-bottom: 10px;
+}
+
+.CurrencyTable h5{
+    display: inline;
+}
+
+.ContentRow{
+    margin-bottom: 10px;
+}
+
+.ContentRow input{
+    justify-content: center;
+    display: inline-block;
+    float: right;
+    height: 25px;
+}
+
+.ContentRow label{
+    text-align: left;
+}
+
+.CalculationsTable{
+    align-items: center;
+    border: 3px solid black;
+    padding: 5px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 23px;
+}
+
