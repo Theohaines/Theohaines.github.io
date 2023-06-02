@@ -61,10 +61,10 @@ function LoadURL(){
     var NewURL = GetCurrentURL().toString()
     NewURL = NewURL.replace('https://theohaines.xyz/Spotifeel/', '');
     NewURL = NewURL.replace('file:///D:/Backups&SafeKeeping/Websites/Current/SpotiFeel/index.html', '');
+    NewURL = NewURL.replace('%20', ' ')
     var FriendlyName = NewURL.split('~')[0]
     var FriendlyName = FriendlyName.split('#').pop();
     var SpotifySongID = NewURL.split('~').pop();
-    NewURL = NewURL.replace('%20', ' ')
 
     LoadFriendlyName(FriendlyName)
     LoadCustomisation()
