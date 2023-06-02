@@ -44,7 +44,7 @@ function GetCurrentURL(){
 
 function CreateUniqueURL(){
     var UniqueURL = "https://theohaines.xyz/Spotifeel/"
-    UniqueURL = UniqueURL + "#" + FriendlyNameInput.value + "|" + SplitSpotifyURL()
+    UniqueURL = UniqueURL + "#" + FriendlyNameInput.value + "~" + SplitSpotifyURL()
     UniqueURL = UniqueURL.replace(' ', '%20')
     SpotifeelLink.value = UniqueURL
 }
@@ -61,9 +61,9 @@ function LoadURL(){
     var NewURL = GetCurrentURL().toString()
     NewURL = NewURL.replace('https://theohaines.xyz/Spotifeel/', '');
     NewURL = NewURL.replace('file:///D:/Backups&SafeKeeping/Websites/Current/SpotiFeel/index.html', '');
-    var FriendlyName = NewURL.split('|')[0]
+    var FriendlyName = NewURL.split('~')[0]
     var FriendlyName = FriendlyName.split('#').pop();
-    var SpotifySongID = NewURL.split('|').pop();
+    var SpotifySongID = NewURL.split('~').pop();
     NewURL = NewURL.replace('%20', ' ')
 
     LoadFriendlyName(FriendlyName)
