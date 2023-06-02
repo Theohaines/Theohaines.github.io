@@ -69,6 +69,7 @@ function LoadURL(){
     LoadFriendlyName(FriendlyName)
     LoadCustomisation()
     LoadIframe(SpotifySongID)
+    window.location.href = "https://theohaines.xyz/Spotifeel"
 }
 
 function LoadFriendlyName(FriendlyName){
@@ -92,7 +93,6 @@ function ShowSpotifeel(){
 }
 
 function ShowCreateMenu(){
-    window.location.href = "https://theohaines.xyz/Spotifeel"
     CreateSpotifeelDiv.style.display = "block"
     DisplaySpotifeelDiv.style.display = "none"
     Header.style.display = "block"
