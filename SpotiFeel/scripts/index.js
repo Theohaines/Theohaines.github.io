@@ -45,6 +45,7 @@ function GetCurrentURL(){
 function CreateUniqueURL(){
     var UniqueURL = GetCurrentURL().toString()
     UniqueURL = UniqueURL + "#" + FriendlyNameInput.value + "|" + SplitSpotifyURL()
+    UniqueURL = UniqueURL.replace(' ', '%20')
     SpotifeelLink.value = UniqueURL
 }
 
