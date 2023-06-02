@@ -103,6 +103,7 @@ function HideCreateForm(){
 }
 
 function ShowCreateForm(){
+    window.location.href = "https://theohaines.xyz/Spotifeel"
     SpotifeelCreateForm.style.display = "block"
     SpotiFeelLinkForm.style.display = "none"
 }
