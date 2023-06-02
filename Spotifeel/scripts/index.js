@@ -92,6 +92,7 @@ function ShowSpotifeel(){
 }
 
 function ShowCreateMenu(){
+    window.location.href = "https://theohaines.xyz/Spotifeel"
     CreateSpotifeelDiv.style.display = "block"
     DisplaySpotifeelDiv.style.display = "none"
     Header.style.display = "block"
