@@ -1,0 +1,45 @@
+.Header{
+    margin-top: 10%;
+    font-size: 200%;
+    text-align: center;
+}
+
+.Header h2{
+    line-height: 1px;
+}
+
+.CreateSpotifeel{
+    margin: auto;
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+}
+
+.DisplaySpotifeel{
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+    text-align: center;
+}
+
+.DisplaySpotifeel h1{
+    font-size: 200%;
+}
+
+.DisplaySpotifeel form{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .CreateSpotifeel{
+        width: 100%;
+    }
+
+    .DisplaySpotifeel{
+        width: 100%;
+    }
+
+    .Spotifeel{
+        width: 100%;
+    }
+}
