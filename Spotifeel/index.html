@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <title>Spotifeel</title>
+</head>
+<body>
+    <div class="Header" id="Header">
+        <h1>Spotifeel</h1>
+        <h2>By Theo Haines</h2>
+    </div>
+
+    <div class="CreateSpotifeel" id="CreateSpotifeel">
+        <form id="SpotifeelCreateForm">
+            <input id="FriendlyNameInput" class="InputText" type="text" placeholder="Enter your friendly name (Name we should call you)">
+            <input id="SpotifySongURL" class="InputText" type="text" placeholder="Paste spotify song link...">
+            <input class="InputButton" type="button" value="Submit" onclick="CreateUniqueURL(); HideCreateForm()">
+        </form>
+
+        <form id="SpotifeelLinkForm">
+            <input id="SpotifeelLink" class="InputText" type="text" disabled>
+            <input class="InputButton" type="button" value="Copy link" onclick="CopyLink(this)">
+            <input class="InputButton" type="button" value="Make new Spotifeel" onclick="ShowCreateForm(); ResetCopyButton()">
+            <input class="InputButton" type="button" value="Show current Spotifeel" onclick="ChangeLinkToSpotifeel()">
+        </form>
+    </div>
+
+    <div class="DisplaySpotifeel" id="DisplaySpotifeel">
+        <h1 id="FriendlyName">[FriendlyName]</h1>
+        <h2>Is Feeling</h2>
+        <iframe class="Spotifeel" id="SpotifeelIframe" iframe style="border-radius:12px" src="" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <form>
+            <input class="InputButton" type="button" value="Make my own Spotifeel" onclick="ShowCreateMenu()">
+        </form>
+    </div>
+
+    <div class="Footer">
+        <h6>Spotifeel by Theo Haines @ TheoHaines.xyz 2023</h6>
+    </div>
+</body>
+<script src="scripts/index.js"></script>
+<script>OnPageLoad()</script>
+</html>
