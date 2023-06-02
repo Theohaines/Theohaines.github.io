@@ -94,7 +94,7 @@ function ShowSpotifeel(){
 function ShowCreateMenu(){
     CreateSpotifeelDiv.style.display = "block"
     DisplaySpotifeelDiv.style.display = "none"
-    Header.style.display = "block"
+    Header.style.display = "none"
 }
 
 function HideCreateForm(){
