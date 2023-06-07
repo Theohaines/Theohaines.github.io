@@ -69,4 +69,31 @@
     .Spotifeel{
         width: 100%;
     }
+
+    .MeaningDisplay{
+        font-size: large;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 95%;
+        height: 30%;
+        display: block; 
+        background-color: #2a2a2a;
+        color: #697575;
+        border: none;
+        resize: none;
+    }
+
+    .MeaningEntry{
+        font-size: large;
+        margin: auto;
+        margin-bottom: 10px;
+        width: 95%;
+        height: 30%;
+        display: block; 
+        background-color: #2a2a2a;
+        color: #697575;
+        border: none;
+        resize: none;
+    }
 }
