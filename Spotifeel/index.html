@@ -23,6 +23,7 @@
         <form id="SpotifeelCreateForm">
             <input id="FriendlyNameInput" class="InputText" type="text" placeholder="Enter your friendly name (Name we should call you)">
             <input id="SpotifySongURL" class="InputText" type="text" placeholder="Paste spotify song link...">
+            <textarea name="MeaningEntry" class="MeaningEntry" id="MeaningEntry" cols="30" rows="10" placeholder="What do the lyrics mean to you?..."></textarea>
             <input class="InputButton" type="button" value="Submit" onclick="CreateUniqueURL(); HideCreateForm()">
         </form>
 
@@ -38,9 +39,9 @@
         <h1 id="FriendlyName">[FriendlyName]</h1>
         <h2>Is Feeling</h2>
         <iframe class="Spotifeel" id="SpotifeelIframe" iframe style="border-radius:12px" src="" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+        <textarea class="MeaningDisplay" name="MeaningDisplay" id="MeaningDisplay" cols="30" rows="10" placeholder="This user hasn't left a note..." disabled></textarea>
         <form>
-            <input class="InputButton" type="button" value="Make my own Spotifeel" onclick="ShowCreateMenu()">
+            <input style="margin-bottom: 80px;" class="InputButton" type="button" value="Make my own Spotifeel" onclick="ShowCreateMenu()">
         </form>
     </div>
 

@@ -21,6 +21,9 @@ let CopyLinkButton
 
 let FriendlyNameH1 = document.getElementById("FriendlyName")
 
+let MeaningEntry = document.getElementById("MeaningEntry")
+let MeaningDisplay = document.getElementById("MeaningDisplay")
+
 let Header = document.getElementById("Header")
 
 function OnPageLoad(){
@@ -44,7 +47,7 @@ function GetCurrentURL(){
 
 function CreateUniqueURL(){
     var UniqueURL = "https://theohaines.xyz/Spotifeel/"
-    UniqueURL = UniqueURL + "#" + FriendlyNameInput.value + "~" + SplitSpotifyURL()
+    UniqueURL = UniqueURL + "#" + FriendlyNameInput.value + "~" + SplitSpotifyURL() + "*" + GetMeaning()
     UniqueURL = UniqueURL.replace(' ', '%20')
     SpotifeelLink.value = UniqueURL
 }
@@ -57,6 +60,10 @@ function SplitSpotifyURL(){
     return SpotifyURL
 }
 
+function GetMeaning(){
+    return MeaningEntry.value
+}
+
 function LoadURL(){
     var NewURL = GetCurrentURL().toString()
     NewURL = NewURL.replace('https://theohaines.xyz/Spotifeel/', '');
@@ -65,18 +72,28 @@ function LoadURL(){
     var FriendlyName = NewURL.split('~')[0]
     var FriendlyName = FriendlyName.split('#').pop();
     var SpotifySongID = NewURL.split('~').pop();
+    SpotifySongID = SpotifySongID.split('*')[0]
+    var Meaning = NewURL.split('*').pop();
+    console.log(Meaning)
 
     LoadFriendlyName(FriendlyName)
+    LoadMeaning(Meaning)
     LoadCustomisation()
     LoadIframe(SpotifySongID)
 }
 
 function LoadFriendlyName(FriendlyName){
+    FriendlyName = decodeURI(FriendlyName)
     FriendlyNameH1.innerText = FriendlyName
 }
 
 function LoadCustomisation(){
     //TODO: Maybe add functionality
+}
+
+function LoadMeaning(Meaning){
+    Meaning = decodeURI(Meaning)
+    MeaningDisplay.value = Meaning.replace('%20', ' ')
 }
 
 function LoadIframe(SpotifySongID){
